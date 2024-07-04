@@ -1,0 +1,73 @@
+.apps-section
+  margin-top: 200px
+
+  .blue-title
+    top: -116px
+
+.apps-item
+  max-width: 1016px
+  width: 100%
+  margin: 0 10px
+  transition: opacity .3s ease
+  position: relative
+
+  &.inactive
+    opacity: .7
+
+  img
+    object-position: center
+    object-fit: cover
+    width: 100%
+    height: 100%
+
+.apps-item-desc
+  color: var(--white-01)
+  position: absolute
+  top: 65px
+  left: 50%
+  transform: translateX(-50%)
+  z-index: 2
+
+.apps-item-ico
+  position: relative
+
+.apps-item-age
+  position: absolute
+  right: 0
+  top: 0
+  border-radius: 12px
+  padding: 4px 8px
+  background: var(--pink-03)
+  font-family: var(--second-family)
+  font-weight: 600
+  font-size: 20px
+  line-height: 140%
+  color: var(--white-01)
+
+.apps-item-title
+  font-size: 24px
+  line-height: 133%
+
+.apps-item-stars
+  gap: 8px
+
+.star
+  background: url('/assets/img/star_empty.svg') no-repeat
+  height: 28px
+  width: 28px
+
+  &.fill
+    background: url('/assets/img/star.svg') no-repeat
+
+.apps-item-rate
+  margin-bottom: 104px
+
+  p
+    font-family: var(--second-family)
+    font-weight: 600
+    font-size: 20px
+    line-height: 140%
+    color: var(--white-01)
+
+section .slider-apps .slick-track
+    padding-bottom: 50px

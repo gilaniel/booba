@@ -1,0 +1,65 @@
+@import "./_helpers"
+@import "./_header"
+@import "./slick.scss"
+@import "./slick-theme.scss"
+@import "./blocks/_preview"
+@import "./blocks/_videos"
+@import "./blocks/_heroes"
+@import "./blocks/_audience"
+@import "./blocks/_shop"
+@import "./blocks/_apps"
+@import "./blocks/_news"
+@import "./blocks/_form"
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html, body
+  overflow-x: hidden
+
+body
+  background: url('/assets/img/bg.webp') var(--bg-color)
+  background-position: bottom 70px center
+  background-repeat: no-repeat
+  background-size: 100%
+  font-family: "315karusel"
+  color: #fff
+
+.container
+  max-width: 1440px
+  padding: 0 30px
+  margin: 0 auto
+
+section
+  position: relative
+  z-index: 4
+
+.content
+  position: relative
+  z-index: 3
+
+footer
+  background: url('/assets/img/footer_bg.svg')
+  padding: 41px 0 23px
+  background-position: center
+
+  span
+    font-family: var(--second-family)
+    font-weight: 500
+    font-size: 16px
+    line-height: 150%
+    color: var(--black)
+
+.cloud-1
+  position: absolute
+  top: 1110px
+  right: 50%
+  transform: translateX(-60px)
+
+.cloud-2
+  position: absolute
+  top: 370px
+  left: 50%
+  transform: translateX(230px)

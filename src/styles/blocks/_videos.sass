@@ -1,0 +1,76 @@
+.videos-section
+  margin-top: 140px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+  .blue-title
+    top: -116px
+
+.video-item
+  border: 10px solid var(--stroke)
+  border-radius: 36px
+  box-shadow: 10px 10px 0 0 rgba(137, 113, 167, 0.51)
+  overflow: hidden
+  width: 324px
+  margin: 0 10px
+  transition: opacity .3s ease
+
+  &.inactive
+    opacity: .7
+
+  .video-preview
+    aspect-ratio: 16/9
+    object-position: center
+    object-fit: cover
+    width: 100%
+
+  .desc
+    background: var(--blue-04)
+    padding: 16px 26px 26px 26px
+
+  .title
+    font-size: 20px
+    line-height: 120%
+    margin-bottom: 8px
+
+  .subtitle
+    font-family: 'Manrope'
+    font-weight: 500
+    font-size: 16px
+    line-height: 150%
+    margin-bottom: 8px
+    max-width: 260px
+    text-overflow: ellipsis
+    overflow: hidden
+    white-space: nowrap
+
+  .tags
+    font-family: 'Manrope'
+    font-weight: 500
+    font-size: 16px
+    line-height: 150%
+    color: var(--white-70)
+
+.video-preview-block
+  position: relative
+
+.video-yt-ico
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  cursor: pointer
+
+.video-duration
+  position: absolute
+  background: var(--black)
+  border-radius: 4px
+  padding: 4px
+  font-family: 'Manrope'
+  font-weight: 700
+  font-size: 12px
+  color: var(--white-01)
+  bottom: 10px
+  right: 10px

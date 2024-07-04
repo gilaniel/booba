@@ -1,0 +1,180 @@
+:root
+  --bg-color: #6aacf2
+  --pink-02: #ea5155
+  --yellow-01: #fd0
+  --yellow-02: #fec811
+  --orange: #f28c00
+  --pink-03: #d41368
+  --pink-01: #f1c8ba
+  --purple-01: #744a8c
+  --purple-02: #7a2378
+  --green-01: #accb4e
+  --green-02: #00aeaa
+  --blue-02: #2699d6
+  --black: #12163a
+  --button-text-active: #fff
+  --button-text-disable: #ffd9d2
+  --pink-04: #ee1474
+  --white-01: #fff
+  --peach-01: #ffe3d5
+  --pink-05: #b20a54
+  --pink-06: #9e0749
+  --peach-02: #fbc1b6
+  --green-03: #75ee15
+  --blue-01: #37a8e5
+  --green-04: #09bdb9
+  --white-50: rgba(255, 255, 255, 0.5)
+  --gray-01: #516377
+  --red-01: #f00
+  --purple-03: #6311b5
+  --yellow-50: rgba(254, 200, 17, 0.5)
+  --gray-02: #c9d5e4
+  --blue-03: #1474ed
+  --purple-04: #4c1780
+  --white-70: rgba(255, 255, 255, 0.7)
+  --white-30: rgba(255, 255, 255, 0.3)
+  --stroke: #fff
+  --blue-04: #2a47c7
+  --second-family: 'Manrope'
+
+@font-face
+  font-family: "315karusel"
+  src: url("/assets/fonts/315karusel_bold.otf")
+
+@font-face
+  font-family: "Manrope"
+  src: url("/assets/fonts/Manrope.ttf")
+
+.flex
+  display: flex
+
+.flex-col
+  flex-direction: column
+
+.align-start
+  align-items: start
+
+.align-center
+  align-items: center
+
+.justify-center
+  justify-content: center
+
+.justify-between
+  justify-content: space-between
+
+.text-center
+  text-align: center
+
+.blue-title
+  max-width: 747px
+  width: 100%
+  background: url('/assets/img/title.png')
+  background-size: cover
+  aspect-ratio: 5.047297297297297
+  position: absolute
+  z-index: 2
+  left: 50%
+  transform: translateX(-50%)
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 36px
+  line-height: 122%
+  color: #fff
+  text-align: center
+
+.btn-pink
+  width: 300px
+  height: 72px
+  background: url('/assets/img/btn_pink.svg') no-repeat transparent
+  border-radius: 20px 20px 20px 0
+  display: flex
+  align-items: center
+  justify-content: center
+  border: none
+  font-family: '315karusel'
+  font-size: 24px
+  line-height: 133%
+  color: var(--stroke)
+  position: relative
+  transition: opacity .2s ease-in-out
+  cursor: pointer
+
+  &:hover
+    opacity: .9
+
+@each $margin in (3, 5, 8, 10, 15, 20, 25, 30, 35, 40, 50, 60)
+  .mt-#{$margin}
+    margin-top: #{$margin}px!important
+
+  .mb-#{$margin}
+    margin-bottom: #{$margin}px!important
+
+  .ml-#{$margin}
+    margin-left: #{$margin}px!important
+
+  .mr-#{$margin}
+    margin-right: #{$margin}px!important
+
+@each $padding in (3, 5, 8, 10, 15, 20, 25, 30, 35, 40, 50, 60)
+  .pt-#{$padding}
+    padding-top: #{$padding}px!important
+
+  .pb-#{$padding}
+    padding-bottom: #{$padding}px!important
+
+  .pl-#{$padding}
+    padding-left: #{$padding}px!important
+
+  .pr-#{$padding}
+    padding-right: #{$padding}px!important
+
+section
+  .slick-track
+    padding-bottom: 20px
+
+  .slick-arrow
+    width: 82px
+    height: 80px
+    z-index: 3
+
+    &:before
+      content: ''
+
+  .slick-prev
+    right: 50%
+    left: inherit
+    transform: translate(-427px, -36px)
+    background: url('/assets/img/arrow.png') no-repeat
+
+    &:hover, &:focus
+      background: url('/assets/img/arrow.png') no-repeat
+
+  .slick-next
+    left: 50%
+    right: inherit
+    transform: translate(439px, -36px)
+    background: url('/assets/img/arrow_r.png') no-repeat
+
+    &:hover, &:focus
+      background: url('/assets/img/arrow_r.png') no-repeat
+
+section .slick-dots 
+  li
+    width: 12px
+    height: 12px
+
+    &.slick-active
+      button
+        background: var(--blue-01)
+
+    button
+      padding: 0
+      border-radius: 100%
+      background: var(--gray-02)
+      width: 12px
+      height: 12px
+
+      &:before
+        content: ''

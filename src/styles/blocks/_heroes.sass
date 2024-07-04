@@ -1,0 +1,86 @@
+.heroes-section
+  margin-top: 210px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+  .slick-list
+    padding-top: 60px!important
+
+  .slider .slick-track
+    padding-bottom: 35px
+
+  .blue-title
+    top: -128px
+
+.hero-item
+  position: relative
+  margin: 0 10px
+  transition: opacity .3s ease
+
+  &.inactive
+    opacity: .7
+
+  .hero-card
+    border-radius: 0 0 36px 36px
+    border: 8px solid var(--stroke)
+    border-top: 0
+    box-shadow: 10px 10px 0 0 rgba(137, 113, 167, 0.51)
+    width: 324px
+    height: 265px
+    position: relative
+    z-index: 2
+    display: flex
+    align-items: flex-end
+    justify-content: center
+
+    img
+      transform: translateY(9px)
+
+  &.green
+    &:before, .hero-card
+      background: var(--green-04)
+
+  &.blue
+    &:before, .hero-card
+      background: var(--blue-01)
+
+  &.yellow
+    &:before, .hero-card
+      background: var(--yellow-02)
+
+  &.red
+    &:before, .hero-card
+      background: var(--pink-02)
+
+  &:before
+    content: ''
+    position: absolute
+    width: 308px
+    height: 54px
+    border: 8px solid var(--stroke)
+    border-radius: 36px 36px 0 0
+    border-bottom: 0
+    box-shadow: 10px 10px 0 0 rgba(137, 113, 167, 0.51)
+    top: -47px
+    left: 0
+    transform: skewY(-5deg)
+    z-index: 1
+
+.hero-name
+  border-radius: 28px
+  padding: 16px 32px
+  background: var(--blue-04)
+  font-family: '315karusel'
+  font-weight: 700
+  font-size: 36px
+  line-height: 122%
+  text-align: center
+  color: var(--button-text-active)
+  position: absolute
+  bottom: -35px
+  left: 50%
+  transform: translateX(-50%)
+  z-index: 2
+  width: calc(100% - 16px)
