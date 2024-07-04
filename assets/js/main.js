@@ -1,3 +1,8 @@
+const emailRegExp =
+  /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i;
+
+const emailInput = $(".js-email-input");
+
 function setInactiveSliders(index, count, type) {
   $(`.slider[data-type="${type}"] .slick-slide`).removeClass("inactive");
 
@@ -92,4 +97,10 @@ $(document).ready(() => {
       setAppsInactiveSliders(nextSlide);
     }
   );
+
+  emailInput.on("change input", (e) => {
+    const valid = emailRegExp.test(e.target.value);
+
+    emailInput.toggleClass("error", !valid);
+  });
 });
