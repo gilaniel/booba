@@ -16,7 +16,24 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 500);
 });
 
+function scrollToEl(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+
+  const rects = el.getBoundingClientRect();
+
+  window.scrollTo({
+    top: rects.y + window.scrollY - 150,
+    behavior: "smooth",
+  });
+}
+
 $(document).ready(() => {
+  $(".js-scroll-to").on("click", (e) => {
+    const id = e.currentTarget.dataset.id;
+    scrollToEl(id);
+  });
+
   new Swiper(".swiper-banner", {
     loop: true,
     slidesPerView: 1,

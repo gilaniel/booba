@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booba</title>
-    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/main2.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -31,33 +31,33 @@
             <img src="/assets/img/logo.svg" alt="Logo" />
 
             <div class="flex align-start menu">
-              <a href="/" class="menu-item">
+              <div class="menu-item js-scroll-to" data-id="about">
                 <div class="menu-item_text">О проекте</div>
-              </a>
-              <a href="/" class="menu-item">
+              </div>
+              <div class="menu-item js-scroll-to" data-id="games">
                 <div class="menu-item_text">Игры</div>
-              </a>
-              <a href="/" class="menu-item">
+              </div>
+              <div class="menu-item js-scroll-to" data-id="videos">
                 <div class="menu-item_text">Видео</div>
-              </a>
-              <a href="/" class="menu-item">
+              </div>
+              <div class="menu-item js-scroll-to" data-id="heroes">
                 <div class="menu-item_text">Персонажи</div>
-              </a>
-              <a href="/" class="menu-item">
+              </div>
+              <div class="menu-item js-scroll-to" data-id="materials">
                 <div class="menu-item_text">Материалы</div>
-              </a>
-              <a href="/" class="menu-item">
+              </div>
+              <div class="menu-item js-scroll-to" data-id="news">
                 <div class="menu-item_text">Новости</div>
-              </a>
-              <a href="/" class="menu-item">
+              </div>
+              <div class="menu-item js-scroll-to" data-id="shop">
                 <div class="menu-item_text">Магазин</div>
-              </a>
+              </div>
             </div>
           </div>
         </div>
       </header>
 
-      <section class="preview-section">
+      <section class="preview-section" id="preview">
         <div class="content">
           <img src="/assets/img/top.webp" class="top" alt="Group" />
           <div class="blue-title">Анонс новой игрушки</div>
@@ -94,7 +94,7 @@
         </div>
       </section>
 
-      <section class="videos-section">
+      <section class="videos-section" id="videos">
         <div class="blue-title">Смотреть мультсериал</div>
 
         <div class="content" style="width: 100%; padding: 0 0">
@@ -237,7 +237,7 @@
         <button class="btn-pink mt-15">Подробнее</button>
       </section>
 
-      <section class="heroes-section">
+      <section class="heroes-section" id="heroes">
         <div class="blue-title">Любимые мультгерои</div>
 
         <div class="content">
@@ -336,7 +336,10 @@
         </div>
       </section>
 
-      <section class="shop-section flex flex-col align-center justify-center">
+      <section
+        class="shop-section flex flex-col align-center justify-center"
+        id="shop"
+      >
         <div class="blue-title">Товары с мультгероями</div>
         <div class="content">
           <div class="swiper swiper-group swiper-shop">
@@ -458,7 +461,10 @@
         </div>
       </section>
 
-      <section class="apps-section flex flex-col align-center justify-center">
+      <section
+        class="apps-section flex flex-col align-center justify-center"
+        id="games"
+      >
         <div class="blue-title">Скачивайте наши приложения</div>
         <div class="content swiper__custom-wrapper">
           <div class="swiper swiper-apps">
@@ -623,7 +629,10 @@
         </div>
       </section>
 
-      <section class="news-section flex flex-col align-center justify-center">
+      <section
+        class="news-section flex flex-col align-center justify-center"
+        id="news"
+      >
         <div class="blue-title">Новости</div>
         <div class="content">
           <div class="swiper swiper-group swiper-news">
