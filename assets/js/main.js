@@ -3,74 +3,81 @@ const emailRegExp =
 
 const emailInput = $(".js-email-input");
 
-function setInactiveSliders(index, count, type) {
-  $(`.slider[data-type="${type}"] .slick-slide`).removeClass("inactive");
+const groupSliderOptions = {
+  slidesPerView: "auto",
+  centeredSlides: true,
+  initialSlide: 1,
+  spaceBetween: 5,
+};
 
-  for (let i = count; i >= index - 3; i--) {
-    if (![index, index - 1, index + 1].includes(i)) {
-      $(
-        `.slider[data-type="${type}"] .slick-slide[data-slick-index="${i}"]`
-      ).addClass("inactive");
-    }
-  }
-}
-
-function setAppsInactiveSliders(index) {
-  const slides = $(`.slider-apps .slick-slide`);
-  const count = slides.length;
-  slides.removeClass("inactive");
-
-  for (let i = count; i >= index - 2; i--) {
-    if (![index].includes(i)) {
-      $(`.slider-apps .slick-slide[data-slick-index="${i}"]`).addClass(
-        "inactive"
-      );
-    }
-  }
-}
+document.addEventListener("DOMContentLoaded", () => {
+  $("body").addClass("loaded");
+});
 
 $(document).ready(() => {
-  $(".slider").on("init", (slick) => {
-    $("body").addClass("loaded");
-
-    const type = slick.target.dataset.type;
-    const sliderCount = $(`.slider[data-type="${type}"] .slick-slide`).length;
-
-    $(`.slider[data-type="${type}"] .slick-prev`).css({
-      "pointer-events": "none",
-    });
-
-    setInactiveSliders(1, sliderCount, type);
+  new Swiper(".swiper-banner", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".top__swiper-btn--right",
+      prevEl: ".top__swiper-btn--left",
+    },
   });
 
-  $(".slider-apps").on("init", (slick) => {
-    setAppsInactiveSliders(0);
-  });
+  new Swiper(
+    ".swiper-videos",
+    Object.assign(groupSliderOptions, {
+      navigation: {
+        nextEl: ".videos__swiper-btn--right",
+        prevEl: ".videos__swiper-btn--left",
+      },
+    })
+  );
+  new Swiper(
+    ".swiper-heroes",
+    Object.assign(groupSliderOptions, {
+      navigation: {
+        nextEl: ".heroes__swiper-btn--right",
+        prevEl: ".heroes__swiper-btn--left",
+      },
+    })
+  );
+  new Swiper(
+    ".swiper-shop",
+    Object.assign(groupSliderOptions, {
+      navigation: {
+        nextEl: ".shop__swiper-btn--right",
+        prevEl: ".shop__swiper-btn--left",
+      },
+    })
+  );
+  new Swiper(
+    ".swiper-news",
+    Object.assign(groupSliderOptions, {
+      navigation: {
+        nextEl: ".news__swiper-btn--right",
+        prevEl: ".news__swiper-btn--left",
+      },
+    })
+  );
 
-  $(".slider-preview").slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    centerMode: true,
-    variableWidth: true,
-  });
-
-  $(".slider").slick({
-    infinite: false,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    initialSlide: 1,
-    variableWidth: true,
-    centerMode: true,
-  });
-
-  $(".slider-apps").slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    variableWidth: true,
-    centerMode: true,
+  new Swiper(".swiper-apps", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    lazyPreloadPrevNext: 3,
+    loop: true,
+    loopedSlides: 2,
+    on: {
+      init: function (swiper) {
+        swiper.el.classList.remove("before-init");
+        swiper.loopFix();
+      },
+    },
+    navigation: {
+      nextEl: ".apps__swiper-btn--right",
+      prevEl: ".apps__swiper-btn--left",
+    },
   });
 
   $(".shop-preview-slider").slick({
@@ -81,24 +88,6 @@ $(document).ready(() => {
     arrows: false,
     swipe: false,
   });
-
-  $(".slider").on("beforeChange", (event, slick, currentSlide, nextSlide) => {
-    const type = slick.$slider.data().type;
-    const sliderCount = $(`.slider[data-type="${type}"] .slick-slide`).length;
-
-    $(`.slider[data-type="${type}"] .slick-prev`).css({
-      "pointer-events": nextSlide === 1 ? "none" : "unset",
-    });
-
-    setInactiveSliders(nextSlide, sliderCount, type);
-  });
-
-  $(".slider-apps").on(
-    "beforeChange",
-    (event, slick, currentSlide, nextSlide) => {
-      setAppsInactiveSliders(nextSlide);
-    }
-  );
 
   emailInput.on("change input", (e) => {
     const valid = emailRegExp.test(e.target.value);
