@@ -37,6 +37,7 @@
   --stroke: #fff;
   --blue-04: #2a47c7;
   --second-family: "Manrope";
+  --mask-swiper-main: linear-gradient(90deg, rgba(50, 50, 50, 0) 0%, rgba(0, 0, 0, 1) 8%, rgba(0, 0, 0, 1) 92%, rgba(255, 255, 255, 0) 100%);
 }
 
 @font-face {
@@ -849,6 +850,10 @@ section .slick-dots li button:before {
   margin: 530px auto 0;
   z-index: 5;
 }
+.preview-section .swiper__btns-group {
+  transform: translate(calc(-50% + 0px), -50%);
+  width: min(100% - 64px, 1026px);
+}
 .preview-section img {
   width: 100%;
   position: relative;
@@ -864,7 +869,6 @@ section .slick-dots li button:before {
 .preview-section .banner {
   width: 1015px;
   z-index: 5;
-  margin: 0 20px;
 }
 .preview-section .blue-title {
   top: -116px;
@@ -881,12 +885,18 @@ section .slick-dots li button:before {
 .videos-section .blue-title {
   top: -116px;
 }
+.videos-section .swiper-group {
+  height: 340px;
+}
+.videos-section .swiper__btns-group {
+  transform: translate(calc(-50% + 7px), -50%);
+  width: min(100% - 64px, 1011px);
+}
 
 .video-item {
   border: 10px solid var(--stroke);
   border-radius: 36px;
   box-shadow: 10px 10px 0 0 rgba(137, 113, 167, 0.51);
-  margin: 0 5px;
   overflow: hidden;
   width: 334px;
   transition: all 0.2s ease;
@@ -976,19 +986,21 @@ section .slick-dots li button:before {
   align-items: center;
   justify-content: center;
 }
-.heroes-section .slick-list {
-  padding-top: 68px !important;
-}
-.heroes-section .slider .slick-track {
-  padding-bottom: 45px;
-}
 .heroes-section .blue-title {
-  top: -128px;
+  top: -120px;
+}
+.heroes-section .swiper-group {
+  height: 380px;
+  padding-top: 70px;
+}
+.heroes-section .swiper__btns-group {
+  transform: translate(calc(-50% + 6px), calc(-50% - 26px));
+  width: min(100% - 64px, 1033px);
 }
 
 .hero-item {
   position: relative;
-  margin: 0 14px;
+  margin: 0 9px;
   transform: scale(1);
   transition: all 0.2s ease;
 }
@@ -1119,6 +1131,17 @@ section .slick-dots li button:before {
 .shop-section .blue-title {
   top: -116px;
 }
+.shop-section .swiper-slide:not(.swiper-slide-active, .swiper-slide-prev, .swiper-slide-next) {
+  opacity: 1;
+  pointer-events: unset;
+}
+.shop-section .swiper-group {
+  height: 540px;
+}
+.shop-section .swiper__btns-group {
+  transform: translate(calc(-50% + 7px), -50%);
+  width: min(100% - 64px, 1029px);
+}
 
 .shop-item {
   border-radius: 40px;
@@ -1126,7 +1149,7 @@ section .slick-dots li button:before {
   width: 324px;
   box-shadow: 10px 10px 0 0 rgba(81, 91, 186, 0.51);
   background: var(--stroke);
-  margin: 0 10px;
+  margin: 0 8px;
 }
 
 .shop-item-price, .shop-item-title {
@@ -1160,13 +1183,28 @@ section .slick-dots li button:before {
 .apps-section .blue-title {
   top: -116px;
 }
+.apps-section .swiper-slide {
+  will-change: transform;
+}
+.apps-section .swiper-slide:not(.swiper-slide-active) {
+  opacity: 0.7;
+  pointer-events: none;
+}
+.apps-section .swiper-apps {
+  height: 550px;
+  mask: var(--mask-swiper-main);
+  -webkit-mask: var(--mask-swiper-main);
+}
+.apps-section .swiper__custom-wrapper {
+  position: relative;
+  width: 100%;
+}
 
 .apps-item {
-  max-width: 1016px;
-  width: 100%;
-  margin: 0 10px;
   transition: opacity 0.3s ease;
   position: relative;
+  width: 1016px;
+  margin: 0 10px;
 }
 .apps-item.inactive {
   opacity: 0.7;
@@ -1252,14 +1290,19 @@ section .slider-apps .slick-track {
 }
 
 .news-item {
-  width: 324px;
+  width: 334px;
   border-radius: 28px;
   box-shadow: 10px 10px 0 0 rgba(137, 113, 167, 0.51);
   overflow: hidden;
   background: var(--white-01);
   position: relative;
-  margin: 10px;
-  transition: opacity 0.3s ease;
+  margin: 0;
+  transform: scale(0.95);
+  will-change: transform;
+  transition: all 0.2s ease;
+}
+.news-item:hover {
+  transform: scale(1);
 }
 .news-item.inactive {
   opacity: 0.7;
@@ -1506,9 +1549,78 @@ body:after {
   z-index: 10;
   transition: opacity 0.2s ease;
 }
-body.loaded::after {
+body:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url("/assets/img/logo_b.svg") no-repeat;
+  background-position: center;
+  z-index: 11;
+  transition: opacity 0.2s ease;
+}
+body.loaded::after, body.loaded::before {
   z-index: 1;
   opacity: 0;
+}
+
+.swiper-group .swiper-slide {
+  width: auto;
+  transition: opacity 0.2s ease;
+}
+
+.swiper-apps .swiper-slide {
+  width: auto;
+  transition: all 0.2s ease;
+}
+
+.swiper-banner {
+  width: 1015px;
+  height: 480px;
+}
+
+.swiper-group {
+  width: 100%;
+}
+
+.swiper-slide:not(.swiper-slide-active, .swiper-slide-prev, .swiper-slide-next) {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.swiper__btns-group {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50% + 8px), -50%);
+  z-index: 5;
+  width: min(100% - 64px, 1016px);
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+  pointer-events: none;
+}
+
+.swiper-btn {
+  width: 82px;
+  height: 80px;
+  z-index: 3;
+  will-change: transform;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  user-select: all;
+  pointer-events: all;
+}
+.swiper-btn.swiper-btn--left {
+  background: url("/assets/img/arrow.png") no-repeat;
+}
+.swiper-btn.swiper-btn--right {
+  background: url("/assets/img/arrow_r.png") no-repeat;
+}
+.swiper-btn:hover {
+  transform: scale(1.08);
 }
 
 .booba-content {

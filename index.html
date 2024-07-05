@@ -5,626 +5,815 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booba</title>
     <link rel="stylesheet" href="/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body style="position: relative">
+    <svg height="0" width="0" class="visually-hidden">
+      <defs>
+        <clipPath id="titleBlockMask">
+          <path
+            d="M15.7655 97.946C2.51744 57.4811 -4.10657 37.2487 3.81033 22.2496C5.57514 18.9061 7.80506 15.8296 10.4335 13.1121C22.2248 0.921265 43.5139 0.921265 86.0923 0.921265H663.065C705.217 0.921265 726.292 0.921265 738.064 12.9797C740.689 15.6695 742.923 18.7159 744.698 22.0291C752.657 36.8826 746.317 56.9821 733.638 97.1811C726.429 120.037 722.824 131.465 714.593 138.794C712.702 140.478 710.655 141.979 708.48 143.276C699.014 148.921 687.031 148.921 663.065 148.921H86.0923C62.3812 148.921 50.5256 148.921 41.119 143.37C38.9568 142.094 36.9195 140.618 35.0341 138.96C26.8318 131.747 23.143 120.48 15.7655 97.946Z"
+          ></path>
+        </clipPath>
+      </defs>
+    </svg>
+
     <img src="/assets/img/cloud1.webp" class="cloud-1" alt="Booba" />
     <img src="/assets/img/cloud2.webp" class="cloud-2" alt="Booba" />
 
-    <header class="header">
-      <div class="container">
-        <div class="flex justify-between">
-          <img src="/assets/img/logo.svg" alt="Logo" />
+    <div class="booba-content">
+      <header class="header">
+        <div class="container">
+          <div class="flex justify-between">
+            <img src="/assets/img/logo.svg" alt="Logo" />
 
-          <div class="flex align-start menu">
-            <div class="menu-item">
-              <div class="menu-item_text">О проекте</div>
-            </div>
-            <div class="menu-item">
-              <div class="menu-item_text">Игры</div>
-            </div>
-            <div class="menu-item">
-              <div class="menu-item_text">Видео</div>
-            </div>
-            <div class="menu-item">
-              <div class="menu-item_text">Персонажи</div>
-            </div>
-            <div class="menu-item">
-              <div class="menu-item_text">Материалы</div>
-            </div>
-            <div class="menu-item">
-              <div class="menu-item_text">Новости</div>
-            </div>
-            <div class="menu-item">
-              <div class="menu-item_text">Магазин</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <section class="preview-section">
-      <div class="content">
-        <img src="/assets/img/top.webp" class="top" alt="Group" />
-        <div class="blue-title">Анонс новой игрушки</div>
-        <div
-          class="content"
-          style="width: 1045px; padding: 0; overflow: hidden"
-        >
-          <div class="slider-preview flex">
-            <img src="/assets/img/banner.webp" class="banner" alt="Banner" />
-            <img src="/assets/img/banner.webp" class="banner" alt="Banner" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="videos-section">
-      <div class="blue-title">Смотреть мультсериал</div>
-
-      <div class="content" style="width: 100%; padding: 0 0">
-        <div class="slider flex" data-type="video">
-          <div class="video-item">
-            <div class="video-preview-block">
-              <img
-                src="/assets/img/video1.webp"
-                class="video-preview"
-                alt="Video 1"
-              />
-              <img src="/assets/img/yt_ico.svg" class="video-yt-ico" alt="Yt" />
-              <div class="video-duration">7:16:08</div>
-            </div>
-            <div class="desc">
-              <p class="title">Серия 1.</p>
-              <p class="subtitle">
-                Буба - Концертный зал - 21 серия - Мультфильм для детей
-              </p>
-              <p class="tags">#буба, #твинкл</p>
-            </div>
-          </div>
-          <div class="video-item">
-            <div class="video-preview-block">
-              <img
-                src="/assets/img/video1.webp"
-                class="video-preview"
-                alt="Video 1"
-              />
-              <img src="/assets/img/yt_ico.svg" class="video-yt-ico" alt="Yt" />
-              <div class="video-duration">7:16:08</div>
-            </div>
-            <div class="desc">
-              <p class="title">Серия 1.</p>
-              <p class="subtitle">
-                Буба - Концертный зал - 21 серия - Мультфильм для детей
-              </p>
-              <p class="tags">#буба, #твинкл</p>
-            </div>
-          </div>
-          <div class="video-item">
-            <div class="video-preview-block">
-              <img
-                src="/assets/img/video1.webp"
-                class="video-preview"
-                alt="Video 1"
-              />
-              <img src="/assets/img/yt_ico.svg" class="video-yt-ico" alt="Yt" />
-              <div class="video-duration">7:16:08</div>
-            </div>
-            <div class="desc">
-              <p class="title">Серия 1.</p>
-              <p class="subtitle">
-                Буба - Концертный зал - 21 серия - Мультфильм для детей
-              </p>
-              <p class="tags">#буба, #твинкл</p>
-            </div>
-          </div>
-          <div class="video-item">
-            <div class="video-preview-block">
-              <img
-                src="/assets/img/video1.webp"
-                class="video-preview"
-                alt="Video 1"
-              />
-              <img src="/assets/img/yt_ico.svg" class="video-yt-ico" alt="Yt" />
-              <div class="video-duration">7:16:08</div>
-            </div>
-            <div class="desc">
-              <p class="title">Серия 1.</p>
-              <p class="subtitle">
-                Буба - Концертный зал - 21 серия - Мультфильм для детей
-              </p>
-              <p class="tags">#буба, #твинкл</p>
-            </div>
-          </div>
-          <div class="video-item">
-            <div class="video-preview-block">
-              <img
-                src="/assets/img/video1.webp"
-                class="video-preview"
-                alt="Video 1"
-              />
-              <img src="/assets/img/yt_ico.svg" class="video-yt-ico" alt="Yt" />
-              <div class="video-duration">7:16:08</div>
-            </div>
-            <div class="desc">
-              <p class="title">Серия 1.</p>
-              <p class="subtitle">
-                Буба - Концертный зал - 21 серия - Мультфильм для детей
-              </p>
-              <p class="tags">#буба, #твинкл</p>
-            </div>
-          </div>
-          <div class="video-item">
-            <div class="video-preview-block">
-              <img
-                src="/assets/img/video1.webp"
-                class="video-preview"
-                alt="Video 1"
-              />
-              <img src="/assets/img/yt_ico.svg" class="video-yt-ico" alt="Yt" />
-              <div class="video-duration">7:16:08</div>
-            </div>
-            <div class="desc">
-              <p class="title">Серия 1.</p>
-              <p class="subtitle">
-                Буба - Концертный зал - 21 серия - Мультфильм для детей
-              </p>
-              <p class="tags">#буба, #твинкл</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <button class="btn-pink mt-15">Подробнее</button>
-    </section>
-
-    <section class="heroes-section">
-      <div class="blue-title">Любимые мультгерои</div>
-
-      <div class="content" style="width: 100%; padding: 0 0">
-        <div class="slider flex" data-type="heroes">
-          <div class="hero-item green">
-            <div class="hero-card">
-              <img src="/assets/img/pers1.webp" alt="Hero" />
-            </div>
-            <div class="hero-name">Буба</div>
-          </div>
-          <div class="hero-item blue">
-            <div class="hero-card">
-              <img src="/assets/img/pers2.webp" alt="Hero" />
-            </div>
-            <div class="hero-name">Буба</div>
-          </div>
-          <div class="hero-item yellow">
-            <div class="hero-card">
-              <img src="/assets/img/pers3.webp" alt="Hero" />
-            </div>
-            <div class="hero-name">Буба</div>
-          </div>
-          <div class="hero-item red">
-            <div class="hero-card">
-              <img src="/assets/img/pers1.webp" alt="Hero" />
-            </div>
-            <div class="hero-name">Буба</div>
-          </div>
-          <div class="hero-item blue">
-            <div class="hero-card">
-              <img src="/assets/img/pers2.webp" alt="Hero" />
-            </div>
-            <div class="hero-name">Буба</div>
-          </div>
-          <div class="hero-item yellow">
-            <div class="hero-card">
-              <img src="/assets/img/pers3.webp" alt="Hero" />
-            </div>
-            <div class="hero-name">Буба</div>
-          </div>
-        </div>
-      </div>
-
-      <button class="btn-pink mt-35">Подробнее</button>
-    </section>
-
-    <section class="audience-section flex flex-col align-center justify-center">
-      <div class="content">
-        <img src="/assets/img/trio.webp" class="top" alt="Group" />
-        <div class="blue-title">У нас большая аудитория</div>
-        <div class="audience-desc flex flex-col justify-center align-center">
-          <img
-            src="/assets/img/yt.png"
-            class="mb-40"
-            alt="Yt"
-            style="max-width: 296px"
-          />
-
-          <div class="flex">
-            <div class="text-center">
-              <a href="https://www.youtube.com/@Booba" target="_blank">
-                <img src="/assets/img/booba_ico.webp" alt="Booba" />
-                <p class="audience-channel">@Booba</p>
+            <div class="flex align-start menu">
+              <a href="/" class="menu-item">
+                <div class="menu-item_text">О проекте</div>
+              </a>
+              <a href="/" class="menu-item">
+                <div class="menu-item_text">Игры</div>
+              </a>
+              <a href="/" class="menu-item">
+                <div class="menu-item_text">Видео</div>
+              </a>
+              <a href="/" class="menu-item">
+                <div class="menu-item_text">Персонажи</div>
+              </a>
+              <a href="/" class="menu-item">
+                <div class="menu-item_text">Материалы</div>
+              </a>
+              <a href="/" class="menu-item">
+                <div class="menu-item_text">Новости</div>
+              </a>
+              <a href="/" class="menu-item">
+                <div class="menu-item_text">Магазин</div>
               </a>
             </div>
-            <p class="audience-subs ml-25">5 200 564</p>
           </div>
         </div>
-        <img src="/assets/img/white.svg" class="audience-bg" alt="Booba" />
-      </div>
-    </section>
+      </header>
 
-    <section class="shop-section flex flex-col align-center justify-center">
-      <div class="blue-title">Товары с мультгероями</div>
-      <div class="content" style="width: 100%; padding: 0 0">
-        <div class="slider flex" data-type="shop">
-          <div class="shop-item">
-            <div class="flex shop-preview-slider">
-              <div class="shop-item-preview">
-                <img src="/assets/img/shop1.webp" alt="Shop" />
-              </div>
-              <div class="shop-item-preview">
-                <img src="/assets/img/shop2.webp" alt="Shop" />
-              </div>
-            </div>
-            <div class="shop-item-price pt-15">4 899</div>
-            <div class="shop-item-title mt-8">
-              Мягкая игрушка - персонаж мультфильма - 30 см
-            </div>
-            <button class="btn-pink mt-15">Купить</button>
-          </div>
-          <div class="shop-item">
-            <div class="flex shop-preview-slider">
-              <div class="shop-item-preview">
-                <img src="/assets/img/shop1.webp" alt="Shop" />
-              </div>
-              <div class="shop-item-preview">
-                <img src="/assets/img/shop2.webp" alt="Shop" />
-              </div>
-            </div>
-            <div class="shop-item-price pt-15">4 899</div>
-            <div class="shop-item-title mt-8">
-              Мягкая игрушка - персонаж мультфильма - 30 см
-            </div>
-            <button class="btn-pink mt-15">Купить</button>
-          </div>
-          <div class="shop-item">
-            <div class="flex shop-preview-slider">
-              <div class="shop-item-preview">
-                <img src="/assets/img/shop1.webp" alt="Shop" />
-              </div>
-              <div class="shop-item-preview">
-                <img src="/assets/img/shop2.webp" alt="Shop" />
-              </div>
-            </div>
-            <div class="shop-item-price pt-15">4 899</div>
-            <div class="shop-item-title mt-8">
-              Мягкая игрушка - персонаж мультфильма - 30 см
-            </div>
-            <button class="btn-pink mt-15">Купить</button>
-          </div>
-          <div class="shop-item">
-            <div class="flex shop-preview-slider">
-              <div class="shop-item-preview">
-                <img src="/assets/img/shop1.webp" alt="Shop" />
-              </div>
-              <div class="shop-item-preview">
-                <img src="/assets/img/shop2.webp" alt="Shop" />
-              </div>
-            </div>
-            <div class="shop-item-price pt-15">4 899</div>
-            <div class="shop-item-title mt-8">
-              Мягкая игрушка - персонаж мультфильма - 30 см
-            </div>
-            <button class="btn-pink mt-15">Купить</button>
-          </div>
-          <div class="shop-item">
-            <div class="flex shop-preview-slider">
-              <div class="shop-item-preview">
-                <img src="/assets/img/shop1.webp" alt="Shop" />
-              </div>
-              <div class="shop-item-preview">
-                <img src="/assets/img/shop2.webp" alt="Shop" />
-              </div>
-            </div>
-            <div class="shop-item-price pt-15">4 899</div>
-            <div class="shop-item-title mt-8">
-              Мягкая игрушка - персонаж мультфильма - 30 см
-            </div>
-            <button class="btn-pink mt-15">Купить</button>
-          </div>
-          <div class="shop-item">
-            <div class="flex shop-preview-slider">
-              <div class="shop-item-preview">
-                <img src="/assets/img/shop1.webp" alt="Shop" />
-              </div>
-              <div class="shop-item-preview">
-                <img src="/assets/img/shop2.webp" alt="Shop" />
-              </div>
-            </div>
-            <div class="shop-item-price pt-15">4 899</div>
-            <div class="shop-item-title mt-8">
-              Мягкая игрушка - персонаж мультфильма - 30 см
-            </div>
-            <button class="btn-pink mt-15">Купить</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="apps-section flex flex-col align-center justify-center">
-      <div class="blue-title">Скачивайте наши приложения</div>
-      <div class="content" style="width: 100%; padding: 0 0">
-        <div class="slider-apps flex" data-type="apps">
-          <div class="apps-item">
-            <div>
-              <img src="/assets/img/phone.webp" alt="" />
-            </div>
-            <div
-              class="apps-item-desc flex flex-col align-center justify-center"
-            >
-              <div class="apps-item-ico">
-                <img src="/assets/img/app.webp" alt="App" />
-                <div class="apps-item-age">3+</div>
-              </div>
-              <p class="apps-item-title mb-20">Мой говорящий Буба для детей</p>
-              <div class="apps-item-rate flex flex-col align-center">
-                <div class="apps-item-stars mb-5 flex">
-                  <div class="star fill"></div>
-                  <div class="star fill"></div>
-                  <div class="star fill"></div>
-                  <div class="star fill"></div>
-                  <div class="star"></div>
+      <section class="preview-section">
+        <div class="content">
+          <img src="/assets/img/top.webp" class="top" alt="Group" />
+          <div class="blue-title">Анонс новой игрушки</div>
+          <div class="content">
+            <div class="swiper swiper-banner">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="/assets/img/banner.webp"
+                    class="banner"
+                    alt="Banner"
+                  />
                 </div>
-                <p>3,6 рейтинг в Google play</p>
-              </div>
-              <button class="btn-pink">Скачать</button>
-            </div>
-          </div>
-          <div class="apps-item">
-            <div>
-              <img src="/assets/img/phone.webp" alt="" />
-            </div>
-            <div
-              class="apps-item-desc flex flex-col align-center justify-center"
-            >
-              <div class="apps-item-ico">
-                <img src="/assets/img/app.webp" alt="App" />
-                <div class="apps-item-age">3+</div>
-              </div>
-              <p class="apps-item-title mb-20">Мой говорящий Буба для детей</p>
-              <div class="apps-item-rate flex flex-col align-center">
-                <div class="apps-item-stars mb-5 flex">
-                  <div class="star fill"></div>
-                  <div class="star fill"></div>
-                  <div class="star fill"></div>
-                  <div class="star fill"></div>
-                  <div class="star"></div>
+                <div class="swiper-slide">
+                  <img
+                    src="/assets/img/banner.webp"
+                    class="banner"
+                    alt="Banner"
+                  />
                 </div>
-                <p>3,6 рейтинг в Google play</p>
               </div>
-              <button class="btn-pink">Скачать</button>
             </div>
-          </div>
-          <div class="apps-item">
-            <div>
-              <img src="/assets/img/phone.webp" alt="" />
-            </div>
-            <div
-              class="apps-item-desc flex flex-col align-center justify-center"
-            >
-              <div class="apps-item-ico">
-                <img src="/assets/img/app.webp" alt="App" />
-                <div class="apps-item-age">3+</div>
-              </div>
-              <p class="apps-item-title mb-20">Мой говорящий Буба для детей</p>
-              <div class="apps-item-rate flex flex-col align-center">
-                <div class="apps-item-stars mb-5 flex">
-                  <div class="star fill"></div>
-                  <div class="star fill"></div>
-                  <div class="star fill"></div>
-                  <div class="star fill"></div>
-                  <div class="star"></div>
-                </div>
-                <p>3,6 рейтинг в Google play</p>
-              </div>
-              <button class="btn-pink">Скачать</button>
-            </div>
-          </div>
-          <div class="apps-item">
-            <div>
-              <img src="/assets/img/phone.webp" alt="" />
-            </div>
-            <div
-              class="apps-item-desc flex flex-col align-center justify-center"
-            >
-              <div class="apps-item-ico">
-                <img src="/assets/img/app.webp" alt="App" />
-                <div class="apps-item-age">3+</div>
-              </div>
-              <p class="apps-item-title mb-20">Мой говорящий Буба для детей</p>
-              <div class="apps-item-rate flex flex-col align-center">
-                <div class="apps-item-stars mb-5 flex">
-                  <div class="star fill"></div>
-                  <div class="star fill"></div>
-                  <div class="star fill"></div>
-                  <div class="star fill"></div>
-                  <div class="star"></div>
-                </div>
-                <p>3,6 рейтинг в Google play</p>
-              </div>
-              <button class="btn-pink">Скачать</button>
+            <div class="swiper__btns-group">
+              <div
+                class="swiper-btn swiper-btn--left top__swiper-btn--left"
+                role="button"
+              ></div>
+              <div
+                class="swiper-btn swiper-btn--right top__swiper-btn--right"
+                role="button"
+              ></div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="news-section flex flex-col align-center justify-center">
-      <div class="blue-title">Скачивайте наши приложения</div>
-      <div class="content" style="width: 100%; padding: 0 0">
-        <div class="slider flex" data-type="news">
-          <div class="news-item">
-            <div class="news-item-badge news">Новости</div>
-            <div>
-              <img
-                src="/assets/img/news1.webp"
-                class="news-item-img"
-                alt="News"
-              />
-            </div>
-            <div class="news-text-content">
-              <div class="news-item-date">20.02.2024</div>
-              <div class="news-item-title">
-                По мультсериалу появятся игрушки
-              </div>
-              <div class="news-item-desc">
-                По мультсериалу «Буба» начнут выпускать различные товары. Теперь
-                малыши смогут поиграть с Бубой и приобрести различную продукцию
-                с ним.
-              </div>
-            </div>
-          </div>
+      <section class="videos-section">
+        <div class="blue-title">Смотреть мультсериал</div>
 
-          <div class="news-item">
-            <div class="news-item-badge partners">Партнёры</div>
-            <div>
-              <img
-                src="/assets/img/news2.webp"
-                class="news-item-img"
-                alt="News"
-              />
-            </div>
-            <div class="news-text-content">
-              <div class="news-item-date">20.02.2024</div>
-              <div class="news-item-title">
-                По мультсериалу появятся игрушки
+        <div class="content" style="width: 100%; padding: 0 0">
+          <div class="swiper swiper-group swiper-videos">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="video-item">
+                  <div class="video-preview-block">
+                    <img
+                      src="/assets/img/video1.webp"
+                      class="video-preview"
+                      alt="Video 1"
+                    />
+                    <img
+                      src="/assets/img/yt_ico.svg"
+                      class="video-yt-ico"
+                      alt="Yt"
+                    />
+                    <div class="video-duration">7:16:08</div>
+                  </div>
+                  <div class="desc">
+                    <p class="title">Серия 1.</p>
+                    <p class="subtitle">
+                      Буба - Концертный зал - 21 серия - Мультфильм для детей
+                    </p>
+                    <p class="tags">#буба, #твинкл</p>
+                  </div>
+                </div>
               </div>
-              <div class="news-item-desc">
-                По мультсериалу «Буба» начнут выпускать различные товары. Теперь
-                малыши смогут поиграть с Бубой и приобрести различную продукцию
-                с ним.
+              <div class="swiper-slide">
+                <div class="video-item">
+                  <div class="video-preview-block">
+                    <img
+                      src="/assets/img/video1.webp"
+                      class="video-preview"
+                      alt="Video 1"
+                    />
+                    <img
+                      src="/assets/img/yt_ico.svg"
+                      class="video-yt-ico"
+                      alt="Yt"
+                    />
+                    <div class="video-duration">7:16:08</div>
+                  </div>
+                  <div class="desc">
+                    <p class="title">Серия 1.</p>
+                    <p class="subtitle">
+                      Буба - Концертный зал - 21 серия - Мультфильм для детей
+                    </p>
+                    <p class="tags">#буба, #твинкл</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video-item">
+                  <div class="video-preview-block">
+                    <img
+                      src="/assets/img/video1.webp"
+                      class="video-preview"
+                      alt="Video 1"
+                    />
+                    <img
+                      src="/assets/img/yt_ico.svg"
+                      class="video-yt-ico"
+                      alt="Yt"
+                    />
+                    <div class="video-duration">7:16:08</div>
+                  </div>
+                  <div class="desc">
+                    <p class="title">Серия 1.</p>
+                    <p class="subtitle">
+                      Буба - Концертный зал - 21 серия - Мультфильм для детей
+                    </p>
+                    <p class="tags">#буба, #твинкл</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video-item">
+                  <div class="video-preview-block">
+                    <img
+                      src="/assets/img/video1.webp"
+                      class="video-preview"
+                      alt="Video 1"
+                    />
+                    <img
+                      src="/assets/img/yt_ico.svg"
+                      class="video-yt-ico"
+                      alt="Yt"
+                    />
+                    <div class="video-duration">7:16:08</div>
+                  </div>
+                  <div class="desc">
+                    <p class="title">Серия 1.</p>
+                    <p class="subtitle">
+                      Буба - Концертный зал - 21 серия - Мультфильм для детей
+                    </p>
+                    <p class="tags">#буба, #твинкл</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video-item">
+                  <div class="video-preview-block">
+                    <img
+                      src="/assets/img/video1.webp"
+                      class="video-preview"
+                      alt="Video 1"
+                    />
+                    <img
+                      src="/assets/img/yt_ico.svg"
+                      class="video-yt-ico"
+                      alt="Yt"
+                    />
+                    <div class="video-duration">7:16:08</div>
+                  </div>
+                  <div class="desc">
+                    <p class="title">Серия 1.</p>
+                    <p class="subtitle">
+                      Буба - Концертный зал - 21 серия - Мультфильм для детей
+                    </p>
+                    <p class="tags">#буба, #твинкл</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="news-item">
-            <div class="news-item-badge news">Новости</div>
-            <div>
-              <img
-                src="/assets/img/news1.webp"
-                class="news-item-img"
-                alt="News"
-              />
-            </div>
-            <div class="news-text-content">
-              <div class="news-item-date">20.02.2024</div>
-              <div class="news-item-title">
-                По мультсериалу появятся игрушки
-              </div>
-              <div class="news-item-desc">
-                По мультсериалу «Буба» начнут выпускать различные товары. Теперь
-                малыши смогут поиграть с Бубой и приобрести различную продукцию
-                с ним.
-              </div>
-            </div>
-          </div>
-          <div class="news-item">
-            <div class="news-item-badge news">Новости</div>
-            <div>
-              <img
-                src="/assets/img/news2.webp"
-                class="news-item-img"
-                alt="News"
-              />
-            </div>
-            <div class="news-text-content">
-              <div class="news-item-date">20.02.2024</div>
-              <div class="news-item-title">
-                По мультсериалу появятся игрушки
-              </div>
-              <div class="news-item-desc">
-                По мультсериалу «Буба» начнут выпускать различные товары. Теперь
-                малыши смогут поиграть с Бубой и приобрести различную продукцию
-                с ним.
-              </div>
-            </div>
-          </div>
-          <div class="news-item">
-            <div class="news-item-badge news">Новости</div>
-            <div>
-              <img
-                src="/assets/img/news1.webp"
-                class="news-item-img"
-                alt="News"
-              />
-            </div>
-            <div class="news-text-content">
-              <div class="news-item-date">20.02.2024</div>
-              <div class="news-item-title">
-                По мультсериалу появятся игрушки
-              </div>
-              <div class="news-item-desc">
-                По мультсериалу «Буба» начнут выпускать различные товары. Теперь
-                малыши смогут поиграть с Бубой и приобрести различную продукцию
-                с ним.
-              </div>
-            </div>
-          </div>
-
-          <div class="news-item">
-            <div class="news-item-badge partners">Партнёры</div>
-            <div>
-              <img
-                src="/assets/img/news1.webp"
-                class="news-item-img"
-                alt="News"
-              />
-            </div>
-            <div class="news-text-content">
-              <div class="news-item-date">20.02.2024</div>
-              <div class="news-item-title">
-                По мультсериалу появятся игрушки
-              </div>
-              <div class="news-item-desc">
-                По мультсериалу «Буба» начнут выпускать различные товары. Теперь
-                малыши смогут поиграть с Бубой и приобрести различную продукцию
-                с ним.
-              </div>
-            </div>
+          <div class="swiper__btns-group">
+            <div
+              class="swiper-btn swiper-btn--left videos__swiper-btn--left"
+              role="button"
+            ></div>
+            <div
+              class="swiper-btn swiper-btn--right videos__swiper-btn--right"
+              role="button"
+            ></div>
           </div>
         </div>
-      </div>
 
-      <button class="btn-pink mt-20">Подробнее</button>
-    </section>
+        <button class="btn-pink mt-15">Подробнее</button>
+      </section>
 
-    <section class="form-section flex flex-col align-center justify-center">
-      <div class="blue-title">Подпишитесь, чтобы ничего не пропустить</div>
-      <div class="content">
-        <div class="form-bg">
-          <div class="main"></div>
-        </div>
-        <div class="form">
-          <div class="form-control mb-15">
-            <label class="form-label">Имя</label>
-            <input type="text" placeholder="Укажите ваше имя" />
+      <section class="heroes-section">
+        <div class="blue-title">Любимые мультгерои</div>
+
+        <div class="content">
+          <div class="swiper swiper-group swiper-heroes">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="hero-item green">
+                  <div class="hero-card">
+                    <img src="/assets/img/pers1.webp" alt="Hero" />
+                  </div>
+                  <div class="hero-name">Буба</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="hero-item blue">
+                  <div class="hero-card">
+                    <img src="/assets/img/pers2.webp" alt="Hero" />
+                  </div>
+                  <div class="hero-name">Буба</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="hero-item yellow">
+                  <div class="hero-card">
+                    <img src="/assets/img/pers3.webp" alt="Hero" />
+                  </div>
+                  <div class="hero-name">Буба</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="hero-item red">
+                  <div class="hero-card">
+                    <img src="/assets/img/pers1.webp" alt="Hero" />
+                  </div>
+                  <div class="hero-name">Буба</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="hero-item blue">
+                  <div class="hero-card">
+                    <img src="/assets/img/pers2.webp" alt="Hero" />
+                  </div>
+                  <div class="hero-name">Буба</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="hero-item yellow">
+                  <div class="hero-card">
+                    <img src="/assets/img/pers3.webp" alt="Hero" />
+                  </div>
+                  <div class="hero-name">Буба</div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="form-control mb-25">
-            <label class="form-label">E-mail</label>
-            <input
-              class="js-email-input"
-              type="text"
-              placeholder="Введите E-mail"
+          <div class="swiper__btns-group">
+            <div
+              class="swiper-btn swiper-btn--left heroes__swiper-btn--left"
+              role="button"
+            ></div>
+            <div
+              class="swiper-btn swiper-btn--right heroes__swiper-btn--right"
+              role="button"
+            ></div>
+          </div>
+        </div>
+
+        <button class="btn-pink mt-25">Подробнее</button>
+      </section>
+
+      <section
+        class="audience-section flex flex-col align-center justify-center"
+      >
+        <div class="content">
+          <img src="/assets/img/trio.webp" class="top" alt="Group" />
+          <div class="blue-title">У нас большая аудитория</div>
+          <div class="audience-desc flex flex-col justify-center align-center">
+            <img
+              src="/assets/img/yt.png"
+              class="mb-40"
+              alt="Yt"
+              style="max-width: 296px"
             />
+
+            <div class="flex">
+              <div class="text-center">
+                <a href="https://www.youtube.com/@Booba" target="_blank">
+                  <img src="/assets/img/booba_ico.webp" alt="Booba" />
+                  <p class="audience-channel">@Booba</p>
+                </a>
+              </div>
+              <p class="audience-subs ml-25">5 200 564</p>
+            </div>
           </div>
-          <div class="form-control">
-            <label class="checkbox flex align-center">
-              Даю согласие на обработку персональных данных
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </div>
-          <button class="btn-pink">Подписаться</button>
+          <img src="/assets/img/white.svg" class="audience-bg" alt="Booba" />
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="shop-section flex flex-col align-center justify-center">
+        <div class="blue-title">Товары с мультгероями</div>
+        <div class="content">
+          <div class="swiper swiper-group swiper-shop">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="shop-item">
+                  <div class="flex shop-preview-slider">
+                    <div class="shop-item-preview">
+                      <img src="/assets/img/shop1.webp" alt="Shop" />
+                    </div>
+                    <div class="shop-item-preview">
+                      <img src="/assets/img/shop2.webp" alt="Shop" />
+                    </div>
+                  </div>
+                  <div class="shop-item-price pt-15">4 899</div>
+                  <div class="shop-item-title mt-8">
+                    Мягкая игрушка - персонаж мультфильма - 30 см
+                  </div>
+                  <button class="btn-pink mt-15">Купить</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="shop-item">
+                  <div class="flex shop-preview-slider">
+                    <div class="shop-item-preview">
+                      <img src="/assets/img/shop1.webp" alt="Shop" />
+                    </div>
+                    <div class="shop-item-preview">
+                      <img src="/assets/img/shop2.webp" alt="Shop" />
+                    </div>
+                  </div>
+                  <div class="shop-item-price pt-15">4 899</div>
+                  <div class="shop-item-title mt-8">
+                    Мягкая игрушка - персонаж мультфильма - 30 см
+                  </div>
+                  <button class="btn-pink mt-15">Купить</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="shop-item">
+                  <div class="flex shop-preview-slider">
+                    <div class="shop-item-preview">
+                      <img src="/assets/img/shop1.webp" alt="Shop" />
+                    </div>
+                    <div class="shop-item-preview">
+                      <img src="/assets/img/shop2.webp" alt="Shop" />
+                    </div>
+                  </div>
+                  <div class="shop-item-price pt-15">4 899</div>
+                  <div class="shop-item-title mt-8">
+                    Мягкая игрушка - персонаж мультфильма - 30 см
+                  </div>
+                  <button class="btn-pink mt-15">Купить</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="shop-item">
+                  <div class="flex shop-preview-slider">
+                    <div class="shop-item-preview">
+                      <img src="/assets/img/shop1.webp" alt="Shop" />
+                    </div>
+                    <div class="shop-item-preview">
+                      <img src="/assets/img/shop2.webp" alt="Shop" />
+                    </div>
+                  </div>
+                  <div class="shop-item-price pt-15">4 899</div>
+                  <div class="shop-item-title mt-8">
+                    Мягкая игрушка - персонаж мультфильма - 30 см
+                  </div>
+                  <button class="btn-pink mt-15">Купить</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="shop-item">
+                  <div class="flex shop-preview-slider">
+                    <div class="shop-item-preview">
+                      <img src="/assets/img/shop1.webp" alt="Shop" />
+                    </div>
+                    <div class="shop-item-preview">
+                      <img src="/assets/img/shop2.webp" alt="Shop" />
+                    </div>
+                  </div>
+                  <div class="shop-item-price pt-15">4 899</div>
+                  <div class="shop-item-title mt-8">
+                    Мягкая игрушка - персонаж мультфильма - 30 см
+                  </div>
+                  <button class="btn-pink mt-15">Купить</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="shop-item">
+                  <div class="flex shop-preview-slider">
+                    <div class="shop-item-preview">
+                      <img src="/assets/img/shop1.webp" alt="Shop" />
+                    </div>
+                    <div class="shop-item-preview">
+                      <img src="/assets/img/shop2.webp" alt="Shop" />
+                    </div>
+                  </div>
+                  <div class="shop-item-price pt-15">4 899</div>
+                  <div class="shop-item-title mt-8">
+                    Мягкая игрушка - персонаж мультфильма - 30 см
+                  </div>
+                  <button class="btn-pink mt-15">Купить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper__btns-group">
+            <div
+              class="swiper-btn swiper-btn--left shop__swiper-btn--left"
+              role="button"
+            ></div>
+            <div
+              class="swiper-btn swiper-btn--right shop__swiper-btn--right"
+              role="button"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="apps-section flex flex-col align-center justify-center">
+        <div class="blue-title">Скачивайте наши приложения</div>
+        <div class="content swiper__custom-wrapper">
+          <div class="swiper swiper-apps">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="apps-item">
+                  <div>
+                    <img src="/assets/img/phone.webp" alt="" />
+                  </div>
+                  <div
+                    class="apps-item-desc flex flex-col align-center justify-center"
+                  >
+                    <div class="apps-item-ico">
+                      <img src="/assets/img/app.webp" alt="App" />
+                      <div class="apps-item-age">3+</div>
+                    </div>
+                    <p class="apps-item-title mb-20">
+                      Мой говорящий Буба для детей
+                    </p>
+                    <div class="apps-item-rate flex flex-col align-center">
+                      <div class="apps-item-stars mb-5 flex">
+                        <div class="star fill"></div>
+                        <div class="star fill"></div>
+                        <div class="star fill"></div>
+                        <div class="star fill"></div>
+                        <div class="star"></div>
+                      </div>
+                      <p>3,6 рейтинг в Google play</p>
+                    </div>
+                    <button class="btn-pink">Скачать</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="apps-item">
+                  <div>
+                    <img src="/assets/img/phone.webp" alt="" />
+                  </div>
+                  <div
+                    class="apps-item-desc flex flex-col align-center justify-center"
+                  >
+                    <div class="apps-item-ico">
+                      <img src="/assets/img/app.webp" alt="App" />
+                      <div class="apps-item-age">3+</div>
+                    </div>
+                    <p class="apps-item-title mb-20">
+                      Мой говорящий Буба для детей
+                    </p>
+                    <div class="apps-item-rate flex flex-col align-center">
+                      <div class="apps-item-stars mb-5 flex">
+                        <div class="star fill"></div>
+                        <div class="star fill"></div>
+                        <div class="star fill"></div>
+                        <div class="star fill"></div>
+                        <div class="star"></div>
+                      </div>
+                      <p>3,6 рейтинг в Google play</p>
+                    </div>
+                    <button class="btn-pink">Скачать</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="apps-item">
+                  <div>
+                    <img src="/assets/img/phone.webp" alt="" />
+                  </div>
+                  <div
+                    class="apps-item-desc flex flex-col align-center justify-center"
+                  >
+                    <div class="apps-item-ico">
+                      <img src="/assets/img/app.webp" alt="App" />
+                      <div class="apps-item-age">3+</div>
+                    </div>
+                    <p class="apps-item-title mb-20">
+                      Мой говорящий Буба для детей
+                    </p>
+                    <div class="apps-item-rate flex flex-col align-center">
+                      <div class="apps-item-stars mb-5 flex">
+                        <div class="star fill"></div>
+                        <div class="star fill"></div>
+                        <div class="star fill"></div>
+                        <div class="star fill"></div>
+                        <div class="star"></div>
+                      </div>
+                      <p>3,6 рейтинг в Google play</p>
+                    </div>
+                    <button class="btn-pink">Скачать</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="apps-item">
+                  <div>
+                    <img src="/assets/img/phone.webp" alt="" />
+                  </div>
+                  <div
+                    class="apps-item-desc flex flex-col align-center justify-center"
+                  >
+                    <div class="apps-item-ico">
+                      <img src="/assets/img/app.webp" alt="App" />
+                      <div class="apps-item-age">3+</div>
+                    </div>
+                    <p class="apps-item-title mb-20">
+                      Мой говорящий Буба для детей
+                    </p>
+                    <div class="apps-item-rate flex flex-col align-center">
+                      <div class="apps-item-stars mb-5 flex">
+                        <div class="star fill"></div>
+                        <div class="star fill"></div>
+                        <div class="star fill"></div>
+                        <div class="star fill"></div>
+                        <div class="star"></div>
+                      </div>
+                      <p>3,6 рейтинг в Google play</p>
+                    </div>
+                    <button class="btn-pink">Скачать</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="apps-item">
+                  <div>
+                    <img src="/assets/img/phone.webp" alt="" />
+                  </div>
+                  <div
+                    class="apps-item-desc flex flex-col align-center justify-center"
+                  >
+                    <div class="apps-item-ico">
+                      <img src="/assets/img/app.webp" alt="App" />
+                      <div class="apps-item-age">3+</div>
+                    </div>
+                    <p class="apps-item-title mb-20">
+                      Мой говорящий Буба для детей
+                    </p>
+                    <div class="apps-item-rate flex flex-col align-center">
+                      <div class="apps-item-stars mb-5 flex">
+                        <div class="star fill"></div>
+                        <div class="star fill"></div>
+                        <div class="star fill"></div>
+                        <div class="star fill"></div>
+                        <div class="star"></div>
+                      </div>
+                      <p>3,6 рейтинг в Google play</p>
+                    </div>
+                    <button class="btn-pink">Скачать</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper__btns-group">
+            <div
+              class="swiper-btn swiper-btn--left apps__swiper-btn--left"
+              role="button"
+            ></div>
+            <div
+              class="swiper-btn swiper-btn--right apps__swiper-btn--right"
+              role="button"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news-section flex flex-col align-center justify-center">
+        <div class="blue-title">Новости</div>
+        <div class="content">
+          <div class="swiper swiper-group swiper-news">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="news-item">
+                  <div class="news-item-badge news">Новости</div>
+                  <div>
+                    <img
+                      src="/assets/img/news1.webp"
+                      class="news-item-img"
+                      alt="News"
+                    />
+                  </div>
+                  <div class="news-text-content">
+                    <div class="news-item-date">20.02.2024</div>
+                    <div class="news-item-title">
+                      По мультсериалу появятся игрушки
+                    </div>
+                    <div class="news-item-desc">
+                      По мультсериалу «Буба» начнут выпускать различные товары.
+                      Теперь малыши смогут поиграть с Бубой и приобрести
+                      различную продукцию с ним.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news-item">
+                  <div class="news-item-badge partners">Партнёры</div>
+                  <div>
+                    <img
+                      src="/assets/img/news2.webp"
+                      class="news-item-img"
+                      alt="News"
+                    />
+                  </div>
+                  <div class="news-text-content">
+                    <div class="news-item-date">20.02.2024</div>
+                    <div class="news-item-title">
+                      По мультсериалу появятся игрушки
+                    </div>
+                    <div class="news-item-desc">
+                      По мультсериалу «Буба» начнут выпускать различные товары.
+                      Теперь малыши смогут поиграть с Бубой и приобрести
+                      различную продукцию с ним.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news-item">
+                  <div class="news-item-badge news">Новости</div>
+                  <div>
+                    <img
+                      src="/assets/img/news1.webp"
+                      class="news-item-img"
+                      alt="News"
+                    />
+                  </div>
+                  <div class="news-text-content">
+                    <div class="news-item-date">20.02.2024</div>
+                    <div class="news-item-title">
+                      По мультсериалу появятся игрушки
+                    </div>
+                    <div class="news-item-desc">
+                      По мультсериалу «Буба» начнут выпускать различные товары.
+                      Теперь малыши смогут поиграть с Бубой и приобрести
+                      различную продукцию с ним.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news-item">
+                  <div class="news-item-badge news">Новости</div>
+                  <div>
+                    <img
+                      src="/assets/img/news2.webp"
+                      class="news-item-img"
+                      alt="News"
+                    />
+                  </div>
+                  <div class="news-text-content">
+                    <div class="news-item-date">20.02.2024</div>
+                    <div class="news-item-title">
+                      По мультсериалу появятся игрушки
+                    </div>
+                    <div class="news-item-desc">
+                      По мультсериалу «Буба» начнут выпускать различные товары.
+                      Теперь малыши смогут поиграть с Бубой и приобрести
+                      различную продукцию с ним.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news-item">
+                  <div class="news-item-badge news">Новости</div>
+                  <div>
+                    <img
+                      src="/assets/img/news1.webp"
+                      class="news-item-img"
+                      alt="News"
+                    />
+                  </div>
+                  <div class="news-text-content">
+                    <div class="news-item-date">20.02.2024</div>
+                    <div class="news-item-title">
+                      По мультсериалу появятся игрушки
+                    </div>
+                    <div class="news-item-desc">
+                      По мультсериалу «Буба» начнут выпускать различные товары.
+                      Теперь малыши смогут поиграть с Бубой и приобрести
+                      различную продукцию с ним.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news-item">
+                  <div class="news-item-badge partners">Партнёры</div>
+                  <div>
+                    <img
+                      src="/assets/img/news1.webp"
+                      class="news-item-img"
+                      alt="News"
+                    />
+                  </div>
+                  <div class="news-text-content">
+                    <div class="news-item-date">20.02.2024</div>
+                    <div class="news-item-title">
+                      По мультсериалу появятся игрушки
+                    </div>
+                    <div class="news-item-desc">
+                      По мультсериалу «Буба» начнут выпускать различные товары.
+                      Теперь малыши смогут поиграть с Бубой и приобрести
+                      различную продукцию с ним.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper__btns-group">
+            <div
+              class="swiper-btn swiper-btn--left news__swiper-btn--left"
+              role="button"
+            ></div>
+            <div
+              class="swiper-btn swiper-btn--right news__swiper-btn--right"
+              role="button"
+            ></div>
+          </div>
+        </div>
+
+        <button class="btn-pink mt-20">Подробнее</button>
+      </section>
+
+      <section class="form-section flex flex-col align-center justify-center">
+        <div class="blue-title">Подпишитесь, чтобы ничего не пропустить</div>
+        <div class="content">
+          <div class="form-bg">
+            <div class="main"></div>
+          </div>
+          <div class="form">
+            <div class="form-control mb-15">
+              <label class="form-label">Имя</label>
+              <input type="text" placeholder="Укажите ваше имя" />
+            </div>
+            <div class="form-control mb-25">
+              <label class="form-label">E-mail</label>
+              <input
+                class="js-email-input"
+                type="text"
+                placeholder="Введите E-mail"
+              />
+            </div>
+            <div class="form-control">
+              <label class="checkbox flex align-center">
+                Даю согласие на обработку персональных данных
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </div>
+            <button class="btn-pink">Подписаться</button>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <footer>
       <div class="container flex align-center justify-between">
@@ -634,6 +823,7 @@
     </footer>
 
     <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/swiper-bundle.min.js"></script>
     <script src="/assets/js/slick.min.js"></script>
     <script src="/assets/js/main.js"></script>
   </body>
