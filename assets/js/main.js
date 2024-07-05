@@ -11,7 +11,9 @@ const groupSliderOptions = {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  $("body").addClass("loaded");
+  setTimeout(() => {
+    $("body").addClass("loaded");
+  }, 500);
 });
 
 $(document).ready(() => {
