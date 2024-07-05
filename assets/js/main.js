@@ -31,6 +31,8 @@ function setAppsInactiveSliders(index) {
 
 $(document).ready(() => {
   $(".slider").on("init", (slick) => {
+    $("body").addClass("loaded");
+
     const type = slick.target.dataset.type;
     const sliderCount = $(`.slider[data-type="${type}"] .slick-slide`).length;
 
