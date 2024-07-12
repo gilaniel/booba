@@ -28,6 +28,19 @@ function scrollToEl(id) {
   });
 }
 
+function ytIframe() {
+  var iframe = document.createElement("iframe");
+  iframe.setAttribute(
+    "src",
+    "https://www.youtube.com/embed/nAYv2aYF-oI?autoplay=0&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=1&showinfo=1"
+  );
+  iframe.setAttribute("frameborder", "0");
+  iframe.setAttribute("allowfullscreen", "");
+  iframe.setAttribute("class", "video-iframe");
+  iframe.setAttribute("id", "youtube-iframe");
+  $(".popup-container").append(iframe);
+}
+
 $(document).ready(() => {
   $(".js-scroll-to").on("click", (e) => {
     const id = e.currentTarget.dataset.id;
@@ -112,5 +125,15 @@ $(document).ready(() => {
     const valid = emailRegExp.test(e.target.value);
 
     emailInput.toggleClass("error", !valid);
+  });
+
+  $(".video-yt-ico").on("click", () => {
+    $(".popup").addClass("popup--opened").removeClass("popup--closed");
+    ytIframe();
+  });
+
+  $(".popup-container").on("click", () => {
+    $(".popup").addClass("popup--closed").removeClass("popup--opened");
+    $(".video-iframe").remove();
   });
 });
