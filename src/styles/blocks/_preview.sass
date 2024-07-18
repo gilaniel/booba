@@ -8,7 +8,7 @@
 
   & .swiper__btns-group
     transform: translate(calc(-50% + 5px), calc(-50% - 40px))
-    width: min(100% - 64px, 1092px)
+    width: 1092px
 
   & img
     width: 100%
@@ -32,7 +32,7 @@
     z-index: 4
 
 .preview-desc
-  padding: 16px 32px 26px 32px
+  padding: 16px 32px 16px 32px
   width: 100%
   background: var(--purple-04)
   font-weight: 700
@@ -86,3 +86,13 @@
 
     .top
       bottom: 408px
+
+@media screen and ( max-width: 1119px )
+  .preview-section
+
+    .swiper__btns-group
+      width: 780px
+
+  .preview-desc
+    font-size: 32px
+    line-height: 125%

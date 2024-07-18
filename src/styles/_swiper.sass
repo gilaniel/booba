@@ -10,9 +10,9 @@
   position: absolute
   top: 50%
   left: 50%
-  transform: translate(calc(-50% + 8px), -50%)
+  transform: translate(calc(-50% + 6px), -50%)
   z-index: 5
-  width: min(100% - 64px, 1016px)
+  width: 1072px
   display: flex
   justify-content: space-between
   user-select: none
@@ -39,3 +39,14 @@
 
   &:active
     transform: scale(0.9)
+
+@media screen and ( max-width: 1119px )
+  .swiper.swiper-group
+    padding: 0 10px
+
+  .swiper__btns-group.show-lg
+    display: none
+
+  .swiper-slide:not(.swiper-slide-active, .swiper-slide-prev, .swiper-slide-next)
+    opacity: 1
+    pointer-events: unset

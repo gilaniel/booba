@@ -598,6 +598,7 @@ section .slick-dots li button:before {
     clip-path: url(#titleBlockTabletMediumMask);
     font-size: 36px;
     line-height: 122%;
+    top: -116px;
   }
 }
 .blue-title--main {
@@ -1001,7 +1002,7 @@ section .slick-dots li button:before {
 }
 .preview-section .swiper__btns-group {
   transform: translate(calc(-50% + 5px), calc(-50% - 40px));
-  width: min(100% - 64px, 1092px);
+  width: 1092px;
 }
 .preview-section img {
   width: 100%;
@@ -1026,7 +1027,7 @@ section .slick-dots li button:before {
 }
 
 .preview-desc {
-  padding: 16px 32px 26px 32px;
+  padding: 16px 32px 16px 32px;
   width: 100%;
   background: var(--purple-04);
   font-weight: 700;
@@ -1082,6 +1083,15 @@ section .slick-dots li button:before {
     bottom: 408px;
   }
 }
+@media screen and (max-width: 1119px) {
+  .preview-section .swiper__btns-group {
+    width: 780px;
+  }
+  .preview-desc {
+    font-size: 32px;
+    line-height: 125%;
+  }
+}
 .videos-section {
   margin-top: 140px;
   display: flex;
@@ -1093,8 +1103,7 @@ section .slick-dots li button:before {
   height: 340px;
 }
 .videos-section .swiper__btns-group {
-  transform: translate(calc(-50% + 7px), -50%);
-  width: min(100% - 64px, 1011px);
+  transform: translate(calc(-50% + 6px), calc(-50% - 30px));
 }
 
 .video-item {
@@ -1197,7 +1206,6 @@ section .slick-dots li button:before {
 }
 .heroes-section .swiper__btns-group {
   transform: translate(calc(-50% + 6px), calc(-50% - 26px));
-  width: min(100% - 64px, 1033px);
 }
 
 .hero-item {
@@ -1218,7 +1226,7 @@ section .slick-dots li button:before {
   border: 8px solid var(--stroke);
   border-top: 0;
   box-shadow: 10px 10px 0 0 rgba(137, 113, 167, 0.51);
-  width: 324px;
+  width: 314px;
   height: 265px;
   position: relative;
   z-index: 2;
@@ -1242,7 +1250,7 @@ section .slick-dots li button:before {
 
 .hero-item.yellow:before,
 .hero-item.yellow .hero-card {
-  background: var(--yellow-02);
+  background: var(--yellow-01);
 }
 
 .hero-item.red:before,
@@ -1253,7 +1261,7 @@ section .slick-dots li button:before {
 .hero-item:before {
   content: "";
   position: absolute;
-  width: 308px;
+  width: 298px;
   height: 54px;
   border: 8px solid var(--stroke);
   border-radius: 36px 36px 0 0;
@@ -1336,6 +1344,11 @@ section .slick-dots li button:before {
   z-index: 3;
 }
 
+@media screen and (max-width: 1119px) {
+  .audience-section .blue-title {
+    top: -118px;
+  }
+}
 .shop-section {
   margin-top: 150px;
 }
@@ -1350,14 +1363,13 @@ section .slick-dots li button:before {
   height: 540px;
 }
 .shop-section .swiper__btns-group {
-  transform: translate(calc(-50% + 7px), -50%);
-  width: min(100% - 64px, 1029px);
+  transform: translate(calc(-50% + 6px), calc(-50% - 40px));
 }
 
 .shop-item {
   border-radius: 40px;
   padding: 16px;
-  width: 324px;
+  width: 319px;
   box-shadow: 10px 10px 0 0 rgba(81, 91, 186, 0.51);
   background: var(--stroke);
   margin: 0 8px;
@@ -1389,6 +1401,11 @@ section .slick-dots li button:before {
   overflow: hidden;
 }
 
+@media screen and (max-width: 1119px) {
+  .shop-section .blue-title {
+    top: -122px;
+  }
+}
 .apps-section {
   margin-top: 200px;
 }
@@ -1523,15 +1540,15 @@ section .slider-apps .slick-track {
     font-size: 27px;
     transform: translateY(-5px);
   }
+  .apps-section .blue-title {
+    top: -125px;
+  }
 }
 .news-section {
   margin-top: 200px;
 }
-.news-section .slick-prev {
-  transform: translate(-427px, -50px);
-}
-.news-section .slick-next {
-  transform: translate(439px, -50px);
+.news-section .swiper__btns-group {
+  transform: translate(calc(-50% + 6px), calc(-50% - 30px));
 }
 
 .news-item {
@@ -1693,6 +1710,7 @@ section .slider-apps .slick-track {
   display: block;
   margin-left: 16px;
   margin-bottom: 4px;
+  font-weight: 700;
 }
 .form input[type=text] {
   width: 100%;
@@ -1744,7 +1762,7 @@ section .slider-apps .slick-track {
   top: 50%;
   left: 0;
   border: 1px solid var(--pink-05);
-  border-radius: 12px;
+  border-radius: 16px;
   padding: 8px;
   width: 44px;
   height: 44px;
@@ -1765,6 +1783,25 @@ section .slider-apps .slick-track {
   transform: rotate(45deg);
 }
 
+.form-control {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1119px) {
+  .form-section .blue-title {
+    top: -123px;
+  }
+  .form-bg::before {
+    left: 44px;
+  }
+  .form-bg::after {
+    right: 44px;
+  }
+  .form {
+    top: 30px;
+    padding: 0 120px;
+  }
+}
 .swiper-group {
   width: 100%;
 }
@@ -1778,9 +1815,9 @@ section .slider-apps .slick-track {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(calc(-50% + 8px), -50%);
+  transform: translate(calc(-50% + 6px), -50%);
   z-index: 5;
-  width: min(100% - 64px, 1016px);
+  width: 1072px;
   display: flex;
   justify-content: space-between;
   user-select: none;
@@ -1810,6 +1847,18 @@ section .slider-apps .slick-track {
   transform: scale(0.9);
 }
 
+@media screen and (max-width: 1119px) {
+  .swiper.swiper-group {
+    padding: 0 10px;
+  }
+  .swiper__btns-group.show-lg {
+    display: none;
+  }
+  .swiper-slide:not(.swiper-slide-active, .swiper-slide-prev, .swiper-slide-next) {
+    opacity: 1;
+    pointer-events: unset;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -1971,6 +2020,9 @@ footer span {
 @media screen and (max-width: 1120px) {
   .container {
     padding: 0 24px;
+  }
+  footer {
+    background-position: left;
   }
 }
 

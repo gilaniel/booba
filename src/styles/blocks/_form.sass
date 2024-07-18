@@ -75,6 +75,7 @@
     display: block
     margin-left: 16px
     margin-bottom: 4px
+    font-weight: 700
 
   & input[type=text]
     width: 100%
@@ -125,7 +126,7 @@
     top: 50%
     left: 0
     border: 1px solid var(--pink-05)
-    border-radius: 12px
+    border-radius: 16px
     padding: 8px
     width: 44px
     height: 44px
@@ -144,3 +145,20 @@
     border: solid white
     border-width: 0 3px 3px 0
     transform: rotate(45deg)
+
+.form-control
+  font-weight: 700
+
+@media screen and ( max-width: 1119px )
+  .form-section .blue-title
+    top: -123px
+
+  .form-bg::before
+    left: 44px
+
+  .form-bg::after
+    right: 44px
+
+  .form
+    top: 30px
+    padding: 0 120px
