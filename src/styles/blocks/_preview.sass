@@ -28,6 +28,7 @@
     height: 100%
     object-fit: cover
     object-position: center
+    aspect-ratio: 1016 / 328
     z-index: 5
 
   & .blue-title
@@ -38,8 +39,7 @@
 
 .preview-desc
   padding: 16px 32px 26px 32px
-  width: 1016px
-  height: 142px
+  width: 100%
   background: var(--purple-04)
   font-weight: 700
   font-size: 40px
@@ -52,3 +52,10 @@
   border: 10px solid var(--stroke)
   border-radius: 36px
   box-shadow: 10px 10px 0 0 rgba(137, 113, 167, 0.51)
+
+@media screen and (max-width: 1120px)
+  .swiper-banner
+    width: 720px
+
+  .preview-section .banner
+    aspect-ratio: 720/348

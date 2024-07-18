@@ -8,6 +8,15 @@ const groupSliderOptions = {
   centeredSlides: true,
   initialSlide: 1,
   spaceBetween: 5,
+  breakpoints: {
+    1440: {
+      centeredSlides: true,
+    },
+    320: {
+      initialSlide: 0,
+      centeredSlides: false,
+    },
+  },
 };
 
 document.addEventListener("DOMContentLoaded", () => {

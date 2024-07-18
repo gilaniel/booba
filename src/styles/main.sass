@@ -56,26 +56,13 @@ body.loaded::before
   z-index: 1
   opacity: 0
 
-.bg
-  background-repeat: no-repeat
-  background-size: 100%
-  position: absolute
-  height: 1560px
-  bottom: 0
-  left: 0
-  right: 0
-  z-index: 1
-  background: url("/assets/img/bg.webp") no-repeat
-  background-position: bottom 70px center
-  background-size: 100%
-
 .swiper-group .swiper-slide
   width: auto
   transition: opacity 0.2s ease
 
 .booba-content
   position: relative
-  z-index: 2
+  z-index: 3
 
 .container
   max-width: 1440px
@@ -104,17 +91,39 @@ footer span
   line-height: 150%
   color: var(--black)
 
-.cloud-1
+.cloud
   position: absolute
-  top: 1110px
+  z-index: 1
+
+.cloud-1
+  top: 650px
   right: 50%
-  transform: translateX(-60px)
+  transform: translateX(-440px)
 
 .cloud-2
-  position: absolute
   top: 370px
   left: 50%
   transform: translateX(230px)
+
+.cloud-3
+  top: 1150px
+  right: 50%
+  transform: translateX(910px)
+
+.cloud-4
+  top: 1830px
+  left: 50%
+  transform: translateX(-730px)
+
+.cloud-5
+  top: 2530px
+  right: 50%
+  transform: translateX(560px)
+
+.cloud-6
+  top: 3230px
+  left: 50%
+  transform: translateX(-840px)
 
 .visually-hidden
   position: absolute
@@ -128,4 +137,15 @@ footer span
   clip: rect(0 0 0 0)
   overflow: hidden
 
-/*# sourceMappingURL=main.css.map */
+.bg
+  background-repeat: no-repeat
+  background-size: 100%
+  position: absolute
+  height: 1650px
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 2
+  background: url("/assets/img/bg.webp") no-repeat
+  background-position: bottom center
+  background-size: 100% 1560px
