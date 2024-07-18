@@ -1,3 +1,5 @@
+@charset "UTF-8"
+
 :root
   --bg-color: #6aacf2
   --pink-02: #ea5155
@@ -35,7 +37,9 @@
   --white-30: rgba(255, 255, 255, 0.3)
   --stroke: #fff
   --blue-04: #2a47c7
-  --second-family: 'Manrope'
+  --font-family: "Manrope"
+  --second-family: "Manrope"
+  --mask-swiper-main: linear-gradient(90deg, rgba(50, 50, 50, 0) 0%, rgba(0, 0, 0, 1) 8%, rgba(0, 0, 0, 1) 92%, rgba(255, 255, 255, 0) 100%)
 
 @font-face
   font-family: "315karusel"
@@ -48,8 +52,8 @@
 .flex
   display: flex
 
-.flex-col
-  flex-direction: column
+  &-col
+    flex-direction: column
 
 .align-start
   align-items: start
@@ -67,11 +71,10 @@
   text-align: center
 
 .blue-title
-  max-width: 747px
-  width: 100%
-  background: url('/assets/img/title.png')
-  background-size: cover
-  aspect-ratio: 5.047297297297297
+  width: 753px
+  height: 176px
+  background-color: var(--blue-03)
+  clip-path: url(#titleBlockMask)
   position: absolute
   z-index: 2
   left: 50%
@@ -79,30 +82,32 @@
   display: flex
   align-items: center
   justify-content: center
-  font-size: 36px
-  line-height: 122%
+  font-size: 48px
+  line-height: 117%
   color: #fff
   text-align: center
+  padding: 0 70px
 
 .btn-pink
   width: 300px
   height: 72px
-  background: url('/assets/img/btn_pink.svg') no-repeat transparent
+  background: url("/assets/img/btn_pink.svg") no-repeat transparent
   border-radius: 20px 20px 20px 0
   display: flex
   align-items: center
   justify-content: center
   border: none
-  font-family: '315karusel'
+  font-family: "315karusel"
   font-size: 24px
   line-height: 133%
   color: var(--stroke)
   position: relative
-  transition: opacity .2s ease-in-out
+  will-change: transform
+  transition: all 0.2s ease
   cursor: pointer
 
   &:hover
-    opacity: .9
+    transform: scale(1.05)
 
 @each $margin in (3, 5, 8, 10, 15, 20, 25, 30, 35, 40, 50, 60)
   .mt-#{$margin}
@@ -129,36 +134,6 @@
 
   .pr-#{$padding}
     padding-right: #{$padding}px!important
-
-section
-  .slick-track
-    padding-bottom: 20px
-
-  .slick-arrow
-    width: 82px
-    height: 80px
-    z-index: 3
-
-    &:before
-      content: ''
-
-  .slick-prev
-    right: 50%
-    left: inherit
-    transform: translate(-427px, -36px)
-    background: url('/assets/img/arrow.png') no-repeat
-
-    &:hover, &:focus
-      background: url('/assets/img/arrow.png') no-repeat
-
-  .slick-next
-    left: 50%
-    right: inherit
-    transform: translate(439px, -36px)
-    background: url('/assets/img/arrow_r.png') no-repeat
-
-    &:hover, &:focus
-      background: url('/assets/img/arrow_r.png') no-repeat
 
 section .slick-dots 
   li

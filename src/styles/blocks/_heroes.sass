@@ -1,3 +1,4 @@
+
 .heroes-section
   margin-top: 210px
   display: flex
@@ -5,24 +6,31 @@
   align-items: center
   justify-content: center
 
-  .slick-list
-    padding-top: 60px!important
+  & .blue-title
+    top: -120px
 
-  .slider .slick-track
-    padding-bottom: 35px
+  & .swiper-group
+    height: 380px
+    padding-top: 70px
 
-  .blue-title
-    top: -128px
+  & .swiper__btns-group
+    transform: translate(calc(-50% + 6px), calc(-50% - 26px))
+    width: min(100% - 64px, 1033px)
 
 .hero-item
   position: relative
-  margin: 0 10px
-  transition: opacity .3s ease
+  margin: 0 9px
+  transform: scale(1)
+  transition: all 0.2s ease
+
+  &:hover
+    transform: scale(1.05)
 
   &.inactive
-    opacity: .7
+    opacity: 0.7
+    pointer-events: none
 
-  .hero-card
+  & .hero-card
     border-radius: 0 0 36px 36px
     border: 8px solid var(--stroke)
     border-top: 0
@@ -35,44 +43,44 @@
     align-items: flex-end
     justify-content: center
 
-    img
-      transform: translateY(9px)
+  & .hero-card img
+    transform: translateY(9px)
 
-  &.green
-    &:before, .hero-card
-      background: var(--green-04)
+.hero-item.green:before,
+.hero-item.green .hero-card
+  background: var(--green-04)
 
-  &.blue
-    &:before, .hero-card
-      background: var(--blue-01)
+.hero-item.blue:before,
+.hero-item.blue .hero-card
+  background: var(--blue-01)
 
-  &.yellow
-    &:before, .hero-card
-      background: var(--yellow-02)
+.hero-item.yellow:before,
+.hero-item.yellow .hero-card
+  background: var(--yellow-02)
 
-  &.red
-    &:before, .hero-card
-      background: var(--pink-02)
+.hero-item.red:before,
+.hero-item.red .hero-card
+  background: var(--pink-02)
 
-  &:before
-    content: ''
-    position: absolute
-    width: 308px
-    height: 54px
-    border: 8px solid var(--stroke)
-    border-radius: 36px 36px 0 0
-    border-bottom: 0
-    box-shadow: 10px 10px 0 0 rgba(137, 113, 167, 0.51)
-    top: -47px
-    left: 0
-    transform: skewY(-5deg)
-    z-index: 1
+.hero-item:before
+  content: ""
+  position: absolute
+  width: 308px
+  height: 54px
+  border: 8px solid var(--stroke)
+  border-radius: 36px 36px 0 0
+  border-bottom: 0
+  box-shadow: 10px 10px 0 0 rgba(137, 113, 167, 0.51)
+  top: -47px
+  left: 0
+  transform: skewY(-5deg)
+  z-index: 1
 
 .hero-name
   border-radius: 28px
   padding: 16px 32px
   background: var(--blue-04)
-  font-family: '315karusel'
+  font-family: "315karusel"
   font-weight: 700
   font-size: 36px
   line-height: 122%

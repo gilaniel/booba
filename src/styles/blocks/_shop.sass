@@ -1,8 +1,20 @@
+
 .shop-section
   margin-top: 150px
 
-  .blue-title
+  & .blue-title
     top: -116px
+
+  & .swiper-slide:not(.swiper-slide-active, .swiper-slide-prev, .swiper-slide-next)
+    opacity: 1
+    pointer-events: unset
+
+  & .swiper-group
+    height: 540px
+
+  & .swiper__btns-group
+    transform: translate(calc(-50% + 7px), -50%)
+    width: min(100% - 64px, 1029px)
 
 .shop-item
   border-radius: 40px
@@ -10,9 +22,10 @@
   width: 324px
   box-shadow: 10px 10px 0 0 rgba(81, 91, 186, 0.51)
   background: var(--stroke)
-  margin: 0 10px
+  margin: 0 8px
 
-.shop-item-price, .shop-item-title
+.shop-item-price,
+.shop-item-title
   color: var(--black)
 
 .shop-item-price

@@ -1,11 +1,12 @@
+
 .form-section
   margin-top: 210px
   padding-bottom: 100px
 
-  .blue-title
+  & .blue-title
     top: -134px
 
-  .content
+  & .content
     max-width: 980px
     width: 100%
 
@@ -14,7 +15,7 @@
   width: 100%
   height: 366px
 
-  .main
+  & .main
     width: 300px
     height: 100%
     margin: 0 auto
@@ -26,7 +27,7 @@
     box-shadow: 10px 10px 0 0 rgba(81, 91, 186, 0.51)
 
   &:before
-    content: ''
+    content: ""
     position: absolute
     z-index: 1
     height: calc(100% - 16px)
@@ -41,7 +42,7 @@
     box-shadow: 10px 10px 0 0 rgba(81, 91, 186, 0.51)
 
   &::after
-    content: ''
+    content: ""
     position: absolute
     z-index: 3
     height: calc(100% - 16px)
@@ -70,12 +71,12 @@
   width: 100%
   z-index: 4
 
-  .form-label
+  & &-label
     display: block
     margin-left: 16px
     margin-bottom: 4px
 
-  input[type="text"]
+  & input[type=text]
     width: 100%
     border: 1px solid var(--gray-02)
     border-radius: 20px
@@ -83,16 +84,18 @@
     height: 48px
     background: var(--white-01)
 
-    &::placeholder
-      color: var(--gray-02)
+  & input[type=text]::placeholder
+    color: var(--gray-02)
 
-    &:focus-visible
-      border: none
-      outline: none
+  & input[type=text]:focus-visible
+    border: none
+    outline: none
 
-  button
-    margin: 0 auto
-    transform: translateY(42px)
+  & input[type=text].error
+    border: 1px solid red
+
+  & button
+    margin: 40px auto 0
 
 .checkbox
   gap: 8px
@@ -104,20 +107,20 @@
   padding-left: 55px
   cursor: pointer
 
-  input
+  & input
     position: absolute
     opacity: 0
     cursor: pointer
     height: 0
     width: 0
 
-    &:checked ~ span
-      background-color: var(--pink-04)
+  & input:checked~span
+    background-color: var(--pink-04)
 
-      &::after
-        display: block
+  & input:checked~span::after
+    display: block
 
-  span
+  & span
     position: absolute
     top: 50%
     left: 0
@@ -128,16 +131,16 @@
     height: 44px
     background: #fff
     transform: translateY(-50%)
-    transition: background .3s ease
+    transition: background 0.3s ease
 
-    &::after
-      content: ""
-      position: absolute
-      display: block
-      left: 17px
-      top: 11px
-      width: 5px
-      height: 15px
-      border: solid white
-      border-width: 0 3px 3px 0
-      transform: rotate(45deg)
+  & span::after
+    content: ""
+    position: absolute
+    display: block
+    left: 17px
+    top: 11px
+    width: 5px
+    height: 15px
+    border: solid white
+    border-width: 0 3px 3px 0
+    transform: rotate(45deg)

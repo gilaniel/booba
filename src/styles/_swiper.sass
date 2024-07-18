@@ -1,0 +1,41 @@
+
+.swiper-group
+  width: 100%
+
+.swiper-slide:not(.swiper-slide-active, .swiper-slide-prev, .swiper-slide-next)
+  opacity: 0.7
+  pointer-events: none
+
+.swiper__btns-group
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(calc(-50% + 8px), -50%)
+  z-index: 5
+  width: min(100% - 64px, 1016px)
+  display: flex
+  justify-content: space-between
+  user-select: none
+  pointer-events: none
+
+.swiper-btn
+  width: 82px
+  height: 80px
+  z-index: 3
+  will-change: transform
+  transition: all 0.2s ease
+  cursor: pointer
+  user-select: all
+  pointer-events: all
+
+  &.swiper-btn--left
+    background: url("/assets/img/arrow.png") no-repeat
+
+  &.swiper-btn--right
+    background: url("/assets/img/arrow_r.png") no-repeat
+
+  &:hover
+    transform: scale(1.08)
+
+  &:active
+    transform: scale(0.9)
