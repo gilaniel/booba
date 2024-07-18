@@ -1202,7 +1202,7 @@ section .slick-dots li button:before {
 }
 .heroes-section .swiper-group {
   height: 380px;
-  padding-top: 70px;
+  padding: 70px 0 0;
 }
 .heroes-section .swiper__btns-group {
   transform: translate(calc(-50% + 6px), calc(-50% - 26px));
@@ -1291,6 +1291,11 @@ section .slick-dots li button:before {
   width: calc(100% - 16px);
 }
 
+@media screen and (max-width: 1119px) {
+  .heroes-section .swiper.swiper-group {
+    padding: 70px 10px 0;
+  }
+}
 .audience-section {
   margin-top: 210px;
   padding-bottom: 40px;
