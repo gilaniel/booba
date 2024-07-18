@@ -9,7 +9,7 @@ const groupSliderOptions = {
   initialSlide: 1,
   spaceBetween: 5,
   breakpoints: {
-    1440: {
+    1120: {
       centeredSlides: true,
     },
     320: {
@@ -144,5 +144,17 @@ $(document).ready(() => {
   $(".popup-container").on("click", () => {
     $(".popup").addClass("popup--closed").removeClass("popup--opened");
     $(".video-iframe").remove();
+  });
+
+  $(".menu-toggle-btn").on("click", () => {
+    $(".menu").toggleClass("open");
+  });
+
+  $(window).click(function () {
+    $(".menu").removeClass("open");
+  });
+
+  $(".menu, .menu-toggle-btn").click(function (event) {
+    event.stopPropagation();
   });
 });

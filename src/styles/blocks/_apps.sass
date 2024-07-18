@@ -22,8 +22,6 @@
 .apps-item
   transition: opacity 0.3s ease
   position: relative
-  width: 1016px
-  margin: 0 10px
 
   &.inactive
     opacity: 0.7
@@ -35,11 +33,13 @@
     height: 100%
 
   &-desc
+    width: 100%
     color: var(--white-01)
     position: absolute
-    top: 65px
+    top: 19px
     left: 50%
     transform: translateX(-50%)
+    padding: 0 230px
     z-index: 2
 
   &-ico
@@ -48,7 +48,7 @@
   &-age
     position: absolute
     right: 0
-    top: 0
+    top: -4px
     border-radius: 12px
     padding: 4px 8px
     background: var(--pink-03)
@@ -59,11 +59,19 @@
     color: var(--white-01)
 
   &-title
-    font-size: 24px
-    line-height: 133%
+    font-size: 28px
+    line-height: 129%
+    text-align: center
+    margin-bottom: 12px
 
   &-stars
     gap: 8px
+
+  button
+    position: absolute
+    left: 50%
+    bottom: -70px
+    margin-left: -97px
 
 .star
   background: url("/assets/img/star_empty.svg") no-repeat
@@ -89,3 +97,30 @@ section .slider-apps .slick-track
 .swiper-apps .swiper-slide
   width: auto
   transition: all 0.2s ease
+
+@media screen and (min-width: 768px)
+  .apps-item
+    width: 720px
+    margin: 0 5px
+
+@media screen and (min-width: 1120px)
+  .apps-item
+    width: 1016px
+    margin: 0 10px
+
+@media screen and (max-width: 1119px)
+  .apps-item-ico
+    width: 128px
+    height: 128px
+
+  .apps-item-desc
+    top: 13px
+    padding: 0 50px
+
+  .apps-item-age
+    right: -7px
+
+  .apps-item-title
+    margin-bottom: 8px
+    font-size: 27px
+    transform: translateY(-5px)

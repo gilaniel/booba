@@ -27,6 +27,16 @@
             d="M16.2493 103.187C1.94351 55.9486 -5.2094 32.3292 6.78488 16.1646C18.7792 0 43.4579 0 92.8153 0H658.324C707.216 0 731.663 0 743.663 16.0014C755.663 32.0028 748.816 55.4708 735.122 102.407V102.407C727.031 130.137 722.986 144.002 712.32 152.001C701.653 160 687.21 160 658.324 160H92.8153C64.2155 160 49.9156 160 39.2995 152.123C28.6835 144.246 24.5388 130.559 16.2493 103.187V103.187Z"
           ></path>
         </clipPath>
+        <clipPath id="titleBlockTabletMask">
+          <path
+            d="M15.9538 94.9622C3.09831 56.7574 -3.32944 37.6551 3.36444 23.1957C5.4942 18.5952 8.47908 14.4415 12.1601 10.9557C23.7297 0 43.8845 0 84.1941 0H664.97C704.866 0 724.814 0 736.358 10.8339C740.032 14.2828 743.022 18.3951 745.17 22.9543C751.916 37.2758 745.764 56.2517 733.461 94.2034V94.2034C726.565 115.475 723.118 126.11 715.63 133.148C713.183 135.447 710.457 137.429 707.516 139.047C698.512 144 687.331 144 664.97 144H84.1941C62.0763 144 51.0174 144 42.075 139.132C39.1524 137.541 36.4397 135.592 33.9999 133.33C26.5345 126.406 23.0076 115.925 15.9538 94.9622V94.9622Z"
+          ></path>
+        </clipPath>
+        <clipPath id="titleBlockTabletMediumMask">
+          <path
+            d="M14.5222 90.0592C3.0546 56.6207 -2.67921 39.9015 1.86549 26.848C4.383 19.617 8.92295 13.2606 14.9462 8.53347C25.8194 0 43.4946 0 78.8448 0H640.356C675.339 0 692.83 0 703.667 8.43631C709.673 13.1113 714.22 19.4026 716.775 26.5716C721.385 39.5084 715.898 56.1166 704.923 89.333V89.333C698.828 107.78 695.781 117.004 689.664 123.476C686.215 127.125 682.109 130.092 677.562 132.223C669.498 136 659.784 136 640.356 136H78.8448C59.6313 136 50.0245 136 42.021 132.289C37.5066 130.196 33.4224 127.279 29.978 123.688C23.8715 117.321 20.7551 108.234 14.5222 90.0592V90.0592Z"
+          ></path>
+        </clipPath>
       </defs>
     </svg>
 
@@ -36,8 +46,8 @@
           <div class="flex justify-between">
             <img src="/assets/img/logo.svg" alt="Logo" class="header-logo" />
 
-            <div class="flex mt-25">
-              <div class="flex align-start menu">
+            <div class="flex mt-25 menu-wrap">
+              <div class="menu">
                 <div class="menu-item js-scroll-to" data-id="about">
                   <div class="menu-item_text">О проекте</div>
                 </div>
@@ -59,6 +69,12 @@
                 <div class="menu-item js-scroll-to" data-id="shop">
                   <div class="menu-item_text">Магазин</div>
                 </div>
+
+                <img
+                  src="/assets/img/close-ico-black.svg"
+                  class="menu-close-btn menu-toggle-btn"
+                  alt="Close menu"
+                />
               </div>
 
               <div class="flex ml-15 header-icons-group">
@@ -67,6 +83,9 @@
                 </div>
                 <div class="icon-btn">
                   <img src="/assets/img/cart_icon.png" alt="Cart icon" />
+                </div>
+                <div class="icon-btn menu-btn menu-toggle-btn ml-5">
+                  <img src="/assets/img/menu_icon.png" alt="Menu icon" />
                 </div>
               </div>
             </div>
@@ -378,7 +397,7 @@
                   <div class="shop-item-title mt-8">
                     Мягкая игрушка - персонаж мультфильма - 30 см
                   </div>
-                  <button class="btn-pink mt-15">Купить</button>
+                  <button class="btn-pink wide mt-15">Купить</button>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -395,7 +414,7 @@
                   <div class="shop-item-title mt-8">
                     Мягкая игрушка - персонаж мультфильма - 30 см
                   </div>
-                  <button class="btn-pink mt-15">Купить</button>
+                  <button class="btn-pink wide mt-15">Купить</button>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -412,7 +431,7 @@
                   <div class="shop-item-title mt-8">
                     Мягкая игрушка - персонаж мультфильма - 30 см
                   </div>
-                  <button class="btn-pink mt-15">Купить</button>
+                  <button class="btn-pink wide mt-15">Купить</button>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -429,7 +448,7 @@
                   <div class="shop-item-title mt-8">
                     Мягкая игрушка - персонаж мультфильма - 30 см
                   </div>
-                  <button class="btn-pink mt-15">Купить</button>
+                  <button class="btn-pink wide mt-15">Купить</button>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -446,7 +465,7 @@
                   <div class="shop-item-title mt-8">
                     Мягкая игрушка - персонаж мультфильма - 30 см
                   </div>
-                  <button class="btn-pink mt-15">Купить</button>
+                  <button class="btn-pink wide mt-15">Купить</button>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -463,7 +482,7 @@
                   <div class="shop-item-title mt-8">
                     Мягкая игрушка - персонаж мультфильма - 30 см
                   </div>
-                  <button class="btn-pink mt-15">Купить</button>
+                  <button class="btn-pink wide mt-15">Купить</button>
                 </div>
               </div>
             </div>
@@ -504,8 +523,9 @@
                       <img src="/assets/img/app.webp" alt="App" />
                       <div class="apps-item-age">3+</div>
                     </div>
-                    <p class="apps-item-title mb-20">
-                      Мой говорящий Буба для детей
+                    <p class="apps-item-title">
+                      Мой говорящий Буба для детей и ещё тестим длинннннеееее
+                      название
                     </p>
                     <div class="apps-item-rate flex flex-col align-center">
                       <div class="apps-item-stars mb-5 flex">
@@ -517,8 +537,8 @@
                       </div>
                       <p>3,6 рейтинг в Google play</p>
                     </div>
-                    <button class="btn-pink">Скачать</button>
                   </div>
+                  <button class="btn-pink">Скачать</button>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -533,9 +553,7 @@
                       <img src="/assets/img/app2.webp" alt="App" />
                       <div class="apps-item-age">3+</div>
                     </div>
-                    <p class="apps-item-title mb-20">
-                      Мой говорящий Буба для детей
-                    </p>
+                    <p class="apps-item-title">Мой говорящий Буба для детей</p>
                     <div class="apps-item-rate flex flex-col align-center">
                       <div class="apps-item-stars mb-5 flex">
                         <div class="star fill"></div>
@@ -562,9 +580,7 @@
                       <img src="/assets/img/app.webp" alt="App" />
                       <div class="apps-item-age">3+</div>
                     </div>
-                    <p class="apps-item-title mb-20">
-                      Мой говорящий Буба для детей
-                    </p>
+                    <p class="apps-item-title">Мой говорящий Буба для детей</p>
                     <div class="apps-item-rate flex flex-col align-center">
                       <div class="apps-item-stars mb-5 flex">
                         <div class="star fill"></div>
@@ -591,9 +607,7 @@
                       <img src="/assets/img/app2.webp" alt="App" />
                       <div class="apps-item-age">3+</div>
                     </div>
-                    <p class="apps-item-title mb-20">
-                      Мой говорящий Буба для детей
-                    </p>
+                    <p class="apps-item-title">Мой говорящий Буба для детей</p>
                     <div class="apps-item-rate flex flex-col align-center">
                       <div class="apps-item-stars mb-5 flex">
                         <div class="star fill"></div>
@@ -620,9 +634,7 @@
                       <img src="/assets/img/app.webp" alt="App" />
                       <div class="apps-item-age">3+</div>
                     </div>
-                    <p class="apps-item-title mb-20">
-                      Мой говорящий Буба для детей
-                    </p>
+                    <p class="apps-item-title">Мой говорящий Буба для детей</p>
                     <div class="apps-item-rate flex flex-col align-center">
                       <div class="apps-item-stars mb-5 flex">
                         <div class="star fill"></div>
