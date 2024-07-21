@@ -125,5 +125,35 @@ section .slider-apps .slick-track
     font-size: 27px
     transform: translateY(-5px)
 
-  .apps-section .blue-title
-    top: -125px
+  .apps-section
+    margin-top: 170px
+
+    .blue-title
+      top: -125px
+
+@media screen and ( max-width: 767px )
+  .apps-item
+    width: 328px
+    height: 516px
+    border-radius: 56px
+    padding: 28px 28px 48px 28px
+    box-shadow: 10px 10px 0 0 rgba(81, 91, 186, 0.51)
+    background: var(--stroke)
+    margin: 0 16px
+
+    button
+      margin-left: -152px
+      bottom: -73px
+
+  .apps-item-desc, .apps-item-rate p
+    color: var(--black)
+
+  .apps-item-desc
+    padding: 0 28px
+    top: 23px
+
+  .apps-item-bg
+    display: none
+
+  .apps-section .swiper-apps
+    height: 590px

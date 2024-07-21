@@ -13,6 +13,9 @@
   & .swiper__btns-group
     transform: translate(calc(-50% + 6px), calc(-50% - 26px))
 
+  button
+    margin-top: 15px
+
 .hero-item
   position: relative
   margin: 0 9px
@@ -89,6 +92,14 @@
   z-index: 2
   width: calc(100% - 16px)
 
+@media screen and ( max-width: 767px )
+  .heroes-section
+    button
+      margin-top: 5px
+
 @media screen and ( max-width: 1119px )
-  .heroes-section .swiper.swiper-group
-    padding: 70px 10px 0
+  .heroes-section
+    margin-top: 190px
+
+    .swiper.swiper-group
+      padding: 70px 10px 0

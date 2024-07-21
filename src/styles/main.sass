@@ -150,9 +150,20 @@ footer span
   background-position: bottom center
   background-size: 100% 1560px
 
-@media screen and (max-width: 1120px)
+@media screen and (max-width: 1900px)
+  .bg
+    background-size: cover
+
+@media screen and (max-width: 1119px)
   .container
-    padding: 0 24px
+    padding: 0 16px
 
   footer
     background-position: left
+
+@media screen and (max-width: 500px)
+  footer
+    background: url("/assets/img/footer_bg_mobile.svg") no-repeat
+    background-size: cover
+    background-position-y: top
+    padding: 54px 0 10px

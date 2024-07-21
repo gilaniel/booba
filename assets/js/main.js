@@ -108,7 +108,11 @@ $(document).ready(() => {
     centeredSlides: true,
     lazyPreloadPrevNext: 3,
     loop: true,
-    loopedSlides: 2,
+    breakpoints: {
+      300: {
+        loopedSlides: 2,
+      },
+    },
     on: {
       init: function (swiper) {
         swiper.el.classList.remove("before-init");

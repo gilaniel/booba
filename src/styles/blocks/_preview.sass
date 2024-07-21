@@ -47,13 +47,47 @@
   border-radius: 36px
   box-shadow: 10px 10px 0 0 rgba(137, 113, 167, 0.51)
 
+@media screen and (min-width: 300px)
+  .swiper-banner
+    width: 328px
+
+  .preview-section
+    padding-top: 20px
+
+    .swiper__btns-group
+      display: none
+
+    .top
+      width: 530px
+      bottom: 496px
+
+    .banner
+      aspect-ratio: 328/186
+
+    .preview-desc
+      font-size: 28px
+      line-height: 129%
+
+    .blue-title
+      top: -124px
+
+    .content
+      margin: 359px auto 0
+
+    button
+      margin-top: 15px
+
 @media screen and (min-width: 768px)
   .swiper-banner
     width: 720px
 
   .preview-section
+    .swiper__btns-group
+      display: flex
+
     .top
       width: 720px
+      bottom: 543px
 
     .banner
       aspect-ratio: 720/348
@@ -64,8 +98,8 @@
     .blue-title
       top: -132px
 
-    .top
-      bottom: 488px
+    button
+      margin-top: 25px
 
 @media screen and (min-width: 1120px)
   .swiper-banner
@@ -85,7 +119,7 @@
       top: -164px
 
     .top
-      bottom: 408px
+      bottom: 488px
 
 @media screen and ( max-width: 1119px )
   .preview-section

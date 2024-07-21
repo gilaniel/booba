@@ -11,6 +11,9 @@
   & .swiper__btns-group
     transform: translate(calc(-50% + 6px), calc(-50% - 30px))
 
+  button
+    margin-top: 10px
+
 .video-item
   border: 10px solid var(--stroke)
   border-radius: 36px
@@ -93,3 +96,10 @@
   color: var(--white-01)
   bottom: 10px
   right: 10px
+
+@media screen and ( max-width: 767px )
+  .videos-section
+    margin-top: 120px
+
+    button
+      margin-top: 0

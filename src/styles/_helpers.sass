@@ -83,7 +83,6 @@
 
   color: #fff
   text-align: center
-  padding: 0 70px
   top: -139px
 
 .btn-pink
@@ -156,21 +155,41 @@ section .slick-dots
       &:before
         content: ''
 
+@media screen and (max-width: 767px)
+  .btn-pink
+    background: var(--pink-04)
+    width: 319px
+    height: 57px
+    clip-path: url(#buttonMobileMask)
+
+@media screen and (min-width: 300px)
+  .blue-title, .blue-title--main
+    width: 328px
+    height: 136px
+    clip-path: url(#titleBlockMobileMediumMask)
+    font-size: 32px
+    line-height: 125%
+    top: -116px
+    padding: 0
+
+  .blue-title--main
+    font-size: 36px
+    line-height: 122%
+
 @media screen and (min-width: 768px)
   .blue-title
     width: 719px
     height: 136px
     clip-path: url(#titleBlockTabletMediumMask)
-    font-size: 36px
-    line-height: 122%
     top: -116px
+    padding: 0 70px
 
-.blue-title--main
-  width: 748px
-  height: 144px
-  clip-path: url(#titleBlockTabletMask)
-  font-size: 40px
-  line-height: 120%
+  .blue-title--main
+    width: 748px
+    height: 144px
+    clip-path: url(#titleBlockTabletMask)
+    font-size: 40px
+    line-height: 120%
 
 @media screen and (min-width: 1120px)
   .blue-title
