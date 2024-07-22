@@ -150,12 +150,14 @@ $(document).ready(() => {
     $(".video-iframe").remove();
   });
 
-  $(".menu-toggle-btn").on("click", () => {
+  $(".menu-toggle-btn").on("click", (e) => {
+    $(e.currentTarget).toggleClass("open").toggleClass("close");
     $(".menu").toggleClass("open");
   });
 
   $(window).click(function () {
     $(".menu").removeClass("open");
+    $(".menu-toggle-btn").removeClass("open").addClass("close");
   });
 
   $(".menu, .menu-toggle-btn").click(function (event) {

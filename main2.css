@@ -683,7 +683,7 @@ section .slick-dots li button:before {
     background: var(--button-text-active);
     padding: 14px 24px 16px;
     border-radius: 16px;
-    margin-top: 16px;
+    margin-top: 20px;
     position: relative;
     transition: all 0.2s;
     will-change: transform;
@@ -714,21 +714,45 @@ section .slick-dots li button:before {
   }
   .menu-btn {
     display: block;
+    position: relative;
+  }
+  .menu-btn.open::after, .menu-btn.close::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+  .menu-btn.open::after {
+    width: 15px;
+    height: 15px;
+    background: url("/assets/img/close.svg") no-repeat;
+    transform: translate(calc(-50% - 3px), calc(-50% - 3px));
+    background-size: cover;
+  }
+  .menu-btn.close::after {
+    width: 18px;
+    height: 14px;
+    background: url("/assets/img/hamburger.svg") no-repeat;
+    transform: translate(calc(-50% - 3px), calc(-50% - 3px));
+    background-size: cover;
   }
   .menu {
     position: fixed;
-    width: 326px;
-    top: 103px;
+    width: 100%;
+    padding: 0 16px;
+    top: 93px;
     bottom: 0;
-    right: -326px;
+    right: 50%;
     z-index: 15;
-    padding-left: 25px;
-    transition: transform 0.3s ease;
-    transform: translateX(326px);
-    will-change: transform;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transform: translateX(50%);
+    will-change: opacity;
+    pointer-events: none;
   }
   .menu.open {
-    transform: translateX(-342px);
+    pointer-events: unset;
+    opacity: 1;
   }
   .menu-wrap {
     margin-top: 16px;
@@ -754,6 +778,28 @@ section .slick-dots li button:before {
     width: 58px;
     height: 61px;
   }
+  .menu-btn.open::after {
+    width: 19px;
+    height: 19px;
+    transform: translate(calc(-50% - 4px), calc(-50% - 4px));
+  }
+  .menu-btn.close::after {
+    width: 25px;
+    height: 19px;
+    transform: translate(calc(-50% - 4px), calc(-50% - 4px));
+  }
+  .menu {
+    width: 326px;
+    padding: 0;
+    right: -326px;
+    top: 103px;
+    opacity: 1;
+    transition: transform 0.3s ease;
+    will-change: transform;
+  }
+  .menu.open {
+    transform: translateX(-342px);
+  }
 }
 @media screen and (min-width: 1120px) {
   .header-logo {
@@ -772,10 +818,12 @@ section .slick-dots li button:before {
     transform: translateX(0);
     right: 0;
     top: 0;
+    transition: none;
   }
   .menu.open {
     transform: translateX(0);
     box-shadow: none;
+    top: 0;
   }
   .menu-item {
     margin-right: 15px;
@@ -1101,7 +1149,7 @@ section .slick-dots li button:before {
   }
   .preview-section .top {
     width: 530px;
-    bottom: 496px;
+    bottom: 488px;
   }
   .preview-section .banner {
     aspect-ratio: 328/186;
@@ -1114,7 +1162,7 @@ section .slick-dots li button:before {
     top: -124px;
   }
   .preview-section .content {
-    margin: 359px auto 0;
+    margin: 364px auto 0;
   }
   .preview-section button {
     margin-top: 15px;
@@ -1123,6 +1171,9 @@ section .slick-dots li button:before {
 @media screen and (min-width: 768px) {
   .swiper-banner {
     width: 720px;
+  }
+  .preview-section {
+    padding-top: 40px;
   }
   .preview-section .swiper__btns-group {
     display: flex;
@@ -1161,7 +1212,7 @@ section .slick-dots li button:before {
     top: -164px;
   }
   .preview-section .top {
-    bottom: 488px;
+    bottom: 431px;
   }
 }
 @media screen and (max-width: 1119px) {
@@ -1283,6 +1334,10 @@ section .slick-dots li button:before {
   }
   .videos-section button {
     margin-top: 0;
+  }
+  .video-yt-ico {
+    opacity: 1;
+    visibility: visible;
   }
 }
 .heroes-section {
@@ -1749,7 +1804,7 @@ section .slider-apps .slick-track {
     display: none;
   }
   .apps-section .swiper-apps {
-    height: 590px;
+    height: 595px;
   }
 }
 .news-section {
