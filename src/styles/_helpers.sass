@@ -86,9 +86,10 @@
   top: -139px
 
 .btn-pink
-  width: 194px
+  width: 189px
   height: 57px
-  background: url("/assets/img/btn_pink.svg") no-repeat transparent
+  clip-path: url('#buttonMask')
+  background: var(--pink-04)
   border-radius: 20px 20px 20px 0
   display: flex
   align-items: center
@@ -104,10 +105,13 @@
   cursor: pointer
 
   &.wide
-    width: 287px
-    background: url("/assets/img/btn_pink-wide.svg") no-repeat transparent
+    width: 285px
+    clip-path: url('#buttonShopMask')
 
   &:hover
+    background: var(--pink-05)
+
+  &:active
     transform: scale(1.05)
 
 @each $margin in (3, 5, 8, 10, 15, 20, 25, 30, 35, 40, 50, 60)
