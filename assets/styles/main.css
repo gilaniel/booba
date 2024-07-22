@@ -1510,6 +1510,7 @@ section .slick-dots li button:before {
   line-height: 81%;
   color: var(--black);
   margin-left: 25px;
+  width: 319px;
 }
 
 .audience-bg {
@@ -1576,6 +1577,7 @@ section .slick-dots li button:before {
     line-height: 122%;
     margin-top: 12px;
     margin-left: 0;
+    width: auto;
   }
   .audience-yt-logo {
     max-width: 180px;
